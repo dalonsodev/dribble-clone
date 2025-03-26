@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="site-nav">
+      <div class="site-nav__wrapper">
+        <a class="site-nav__logo" href="/"> <!--Link updated to the homepage-->
+          <title>Dribbble: the community for graphic design</title>
+          <img
+            src="images/wordmark.svg"
+            alt="Dribble logo"
+            width="210"
+            height="22"
+          />
+        </a>
+        <nav class="site-nav-main">
+          <ul class="site-nav-main__list">
+            <li class="site-nav-main__link">
+              <a href="#">Explore</a>
+            </li>
+            <li class="site-nav-main__link">
+              <a href="#">Hire a Designer</a>
+            </li>
+            <li class="site-nav-main__link">
+              <a href="#">Find Jobs</a>
+            </li>
+            <li class="site-nav-main__link">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="site-nav__actions-container">
+          <a href="#">Sign up</a>
+          <a href="#">Log in</a>
+        </div>
+      </div>
+    </div>
+    <div id="wrap">
+      <section class="shots-search-hero">
+        <h1 class="shots-search-hero__heading">Discover the world's top designers</h1>
+        <p class="shots-search-hero__subheading">Explore work from the most talented and accomplished designers ready to take on your next project</p>
+        <div class="shots-search-hero__input-container">
+          <form class="site-nav-search">
+            <input name="q" type="search" placeholder="What are you looking for?" />
+            <button class="site-nav-search__dropdown">
+              Shots <!--Añadir las opciones del "menú desplegable"-->
+            </button>
+            <button class="site-nav-search__go">🔍</button> <!---esto necesitaría JS para funcionar--->
+          </form>
+        </div>
+        <div class="shots-search-hero__trending-container">
+          <div class="shots-search-hero__trending-title">
+            <p>Trending searches</p>
+          </div>
+          <div class="shots-search-hero__trending-tags">
+            <a class="shots-search-hero__trending-tag" href="/search/landing%20page">landing page</a>
+            <a class="shots-search-hero__trending-tag" href="/search/e-commerce">e-commerce</a>
+            <a class="shots-search-hero__trending-tag" href="/search/mobile%20app">mobile app</a>
+            <a class="shots-search-hero__trending-tag" href="/search/logo%20design">logo design</a>
+            <a class="shots-search-hero__trending-tag" href="/search/dashboard">dashboard</a>
+            <a class="shots-search-hero__trending-tag" href="/search/icons">icons</a>
+          </div>
+        </div>
+      </section>
+      <div class="filter-subnav"></div>
+        <div class="filter-subnav-inner">
+          <div class="filter-views">
+            <a class="form-btn" href="/">
+              <span>Popular</span>
+            </a>
+          </div> <!--Configurar el "menú desplegable"-->
+          <div class="filter-categories">
+            <span class="scroll scroll-backward"></span> <!--Configurar icono + "movimiento"-->
+            <span class="scroll scroll-forward"></span> <!--Configurar icono + "movimiento"-->
+            <ul>
+              <li class="category active">
+                <a href="/shots/popular/">Discover</a>
+              </li>
+              <li class="category">
+                <a href="/shots/popular/animation">Animation</a>
+              </li>
+              <li class="category">
+                <a href="/shots/popular/branding">Branding</a>
+              </li>
+              <li class="category">
+                <a href="/shots/popular/illustration">Illustration</a>
+              </li>
+              <li class="category">
+                <a href="/shots/popular/mobile">Mobile</a>
+              </li>
+              <li class="category">
+                <a href="/shots/popular/print">Print</a>
+              </li>
+              <li class="category">
+                <a href="/shots/popular/product-design">Product Design</a>
+              </li>
+              <li class="category">
+                <a href="/shots/popular/typography">Typography</a>
+              </li>
+              <li class="category">
+                <a href="/shots/popular/web-design">Web Design</a>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-settings"> <!---esto necesitaría JS para funcionar--->
+            <a class="form-btn" href="/">
+              <img class="icon filter-icon"/>
+              <span class="label">Filters</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
