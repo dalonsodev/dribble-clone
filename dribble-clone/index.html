@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <!------------------------------ HEADER AND NAVIGATION -------------------------------->
     <div class="site-nav">
       <div class="site-nav__wrapper">
         <a class="site-nav__logo" href="/"> <!--Link updated to the homepage-->
@@ -39,6 +40,7 @@
         </div>
       </div>
     </div>
+    <!------------------------------ SEARCH BLOCK WITH FILTERS -------------------------------->
     <div id="wrap">
       <section class="shots-search-hero">
         <h1 class="shots-search-hero__heading">Discover the world's top designers</h1>
@@ -65,55 +67,1998 @@
             <a class="shots-search-hero__trending-tag" href="/search/icons">icons</a>
           </div>
         </div>
-      </section>
-      <div class="filter-subnav"></div>
-        <div class="filter-subnav-inner">
-          <div class="filter-views">
-            <a class="form-btn" href="/">
-              <span>Popular</span>
-            </a>
-          </div> <!--Configurar el "menú desplegable"-->
-          <div class="filter-categories">
-            <span class="scroll scroll-backward"></span> <!--Configurar icono + "movimiento"-->
-            <span class="scroll scroll-forward"></span> <!--Configurar icono + "movimiento"-->
-            <ul>
-              <li class="category active">
-                <a href="/shots/popular/">Discover</a>
-              </li>
-              <li class="category">
-                <a href="/shots/popular/animation">Animation</a>
-              </li>
-              <li class="category">
-                <a href="/shots/popular/branding">Branding</a>
-              </li>
-              <li class="category">
-                <a href="/shots/popular/illustration">Illustration</a>
-              </li>
-              <li class="category">
-                <a href="/shots/popular/mobile">Mobile</a>
-              </li>
-              <li class="category">
-                <a href="/shots/popular/print">Print</a>
-              </li>
-              <li class="category">
-                <a href="/shots/popular/product-design">Product Design</a>
-              </li>
-              <li class="category">
-                <a href="/shots/popular/typography">Typography</a>
-              </li>
-              <li class="category">
-                <a href="/shots/popular/web-design">Web Design</a>
-              </li>
-            </ul>
-          </div>
-          <div class="filter-settings"> <!---esto necesitaría JS para funcionar--->
-            <a class="form-btn" href="/">
-              <img class="icon filter-icon"/>
-              <span class="label">Filters</span>
-            </a>
+        <div class="filter-subnav">
+          <div class="filter-subnav-inner">
+            <div class="filter-views">
+              <a class="form-btn" href="/">
+                <span>Popular</span>
+              </a>
+            </div> <!--Configurar el "menú desplegable"-->
+            <div class="filter-categories">
+              <span class="scroll scroll-backward"></span> <!--Configurar icono + "movimiento"-->
+              <span class="scroll scroll-forward"></span> <!--Configurar icono + "movimiento"-->
+              <ul>
+                <li class="category active">
+                  <a href="/shots/popular/">Discover</a>
+                </li>
+                <li class="category">
+                  <a href="/shots/popular/animation">Animation</a>
+                </li>
+                <li class="category">
+                  <a href="/shots/popular/branding">Branding</a>
+                </li>
+                <li class="category">
+                  <a href="/shots/popular/illustration">Illustration</a>
+                </li>
+                <li class="category">
+                  <a href="/shots/popular/mobile">Mobile</a>
+                </li>
+                <li class="category">
+                  <a href="/shots/popular/print">Print</a>
+                </li>
+                <li class="category">
+                  <a href="/shots/popular/product-design">Product Design</a>
+                </li>
+                <li class="category">
+                  <a href="/shots/popular/typography">Typography</a>
+                </li>
+                <li class="category">
+                  <a href="/shots/popular/web-design">Web Design</a>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-settings"> <!---esto necesitaría JS para funcionar--->
+              <a class="form-btn" href="/">
+                <img class="icon filter-icon" src="XXXXXXXXXXXXX" />
+                <span class="label">Filters</span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+        <!------------------------------ MAIN CONTENT GRID -------------------------------->
+        <div class="wrap-inner">
+          <div id="content" role="main">
+            <ol class="shots-grid"> <!--el original usa JS pero yo usaré imágenes fijas-->
+              <li id="screenshot-25802252" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25802252">
+                    <img class="shot-thumbnail" 
+                      src="https://cdn.dribbble.com/userupload/42602310/file/original-d576afd77b5ecd11d12b3167e89a402d.png?crop=0x0-3201x2401&format=webp&resize=400x300&vertical=center"
+                      alt="SUNBORN // Website 3d blacklead blacklead studio bottle cool design digital e commerce product shop ui web web design website"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/blacklead-studio" >
+                      <img class="photo" 
+                        src="https://cdn.dribbble.com/users/3537662/avatars/small/fa89ee31a92bff70db88c84bafc9b7ef.png?1688500299"
+                        alt=""
+                        style="width:24px"
+                      />
+                      <span class="display-name">BL/S®</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon" 
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">105</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img
+                        class="icon"
+                        src="images/eye.png"
+                        style="width:16px"
+                      />
+                      <span class="shot-views-count">7.7k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25799751" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25799751" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42595465/file/original-e663d62cc70070e8fdd6a4782a28d161.jpg?format=webp&resize=400x300&vertical=center"
+                      alt="Phantom auto buy/sell concept app app design buy buy crypto concept crypto crypto wallet design ios mobile phantom sell sell crypto solana ui ux wallet wallet design"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/emoteagency">
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/11502486/avatars/small/a8456497e26e27118763af6fc5b5fbcc.png?1650726363"
+                        alt="Emote"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Emote</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">147</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">12.2k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25801924" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25801924" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42601410/file/original-57afff76082019744bd5e5c792c33ac8.png?crop=0x0-1600x1200&format=webp&resize=400x300&vertical=center"
+                      alt="Lumee Logo Design - iGaming / Gambling / Casino betting casino crypto custom design diamond gambling gem icon igaming l letter logo logodesign logotype minimalistic modern simple symbol web3"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/dalius-stuoka" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/68544/avatars/small/4c145fcf55db7976aa63183a03c7aa65.png?1672415553"
+                        alt="Dalius Stuoka"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Dalius Stuoka</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count"></span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count"></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25797132" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25797132" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42587465/file/still-c9b724055e7c34ddf3a0ecca7fd75cd4.png?format=webp&resize=400x300&vertical=center"
+                      alt="Task completion micro interaction animation app card cards micro interaction motion graphics stacking todo"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/rholesinsky" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/67904/avatars/small/8bfc719620ca441a8fdb8b09703d8d54.jpg?1580744539"
+                        alt="Robin Holesinsky"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Robin Holesinsky</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">63</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">7.7k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25801686" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25801686" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42600815/file/original-f868aa0271adea10c97bff320e060b76.png?format=webp&resize=400x300&vertical=center"
+                      alt="Crypto App Design app baning crypto crypto app crypto design crypto exchange data visualisation defi digital banking fintech interface investment ios mobile app neobanking product design trading transactions wallet"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/nixtio" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/1057940/avatars/small/f068710cc8e5fcebcbcd8f1f75d1b4ef.gif?1732126488"
+                        alt="Nixtio"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Nixtio</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">84</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">3.6k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25802414" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25802414" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42602830/file/original-1357c79be7d89ef0ccd62b411aa2ff6b.png?format=webp&resize=400x300&vertical=center"
+                      alt="Eclypse lab mark biology branding chemistry eclipse geometry graphic design health healthcare hospital labs light logo medical minimal moon research science sun technology visual identity"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/dalibor-pajic" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/573008/avatars/small/5f7003ae160231aab3118f0d5b33aecf.png?1555600696"
+                        alt="Dalibor Pajic"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Dalibor Pajic</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">38</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">4k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25801821" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25801821" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42601155/file/still-2f8074dccbb4f5ce1d31e0a38acaf80e.png?format=webp&resize=400x300&vertical=center"
+                      alt="Control Center android book design illustration interface ios menu mobile"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/geexarts" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/1832625/avatars/small/d0a819596a87076630326f81799e85c0.jpg?1586442553"
+                        alt="Geex Arts"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Geex Arts</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">120</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">7.9k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25801505" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25801505" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42600361/file/original-70c3598272c777995cf72bb69d68acae.png?format=webp&resize=400x300&vertical=center"
+                      alt="Farmer Logo agriculture branding crops design emblem farmer food geometric hat icon identity illustration lines logo man mark natural restaurant symbol vector"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/radu-lucian" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/677572/avatars/small/cd94b72f04f84b0dcf1c1ee3f6bdf2b9.png?1634627780"
+                        alt="Lucian Radu"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Lucian Radu</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">82</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">7.4k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25802033" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25802033" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42601684/file/original-ce8ad3094dfe67447077b4a480790788.jpg?format=webp&resize=400x300&vertical=center"
+                      alt="Sun Gate gate japan logo simple sun"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/trinitiff" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/1144167/avatars/small/c262d2a5e9dd1b2fca7a5fc4e3ddf88a.png?1702264899"
+                        alt="Catur Argi"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Catur Argi</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">27</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">3.2k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25802737" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25802737" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42603590/file/original-6acf5a388250730adf985844e373fa40.png?format=webp&resize=400x300&vertical=center"
+                      alt="Dex Swap WebApp 3d blockchain branding graphic design illustration telegram ton ui ux"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/s-art" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/276611/avatars/small/34db0cd439d592f6a09fba79bc501a3a.png?1631140245"
+                        alt="Aleksandr Levchenko"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Aleksandr Levchenko</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">40</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">1.8k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25803244" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25803244" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42604902/file/original-892871038d15b7b1d066eb8ed41e94a8.png?format=webp&resize=400x300&vertical=center"
+                      alt="Sophina Landing Page abstract ai artificial inteligence brand identity branding design logo hero section home page identity landing page logo logo design mark negative space symbol visual identity website design"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/sava-stoic" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/958859/avatars/small/b38a69e2dbbee4a5a6e1916bf74fb606.png?1736538134"
+                        alt="Sava Stoic"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Sava Stoic</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">28</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">717</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25801571" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25801571" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42600527/file/original-047bb40c5caeee9f59b282951ae3b13a.png?format=webp&resize=400x300&vertical=center"
+                      alt="Finova online banking app bankong design finance fintech flat home layo mobile page product saas studio ui ux website"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/layo-design" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/6816261/avatars/small/39f1109dcb22b7bce5426de7226c72d1.png?1615151691"
+                        alt="Layo"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Layo</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">126</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">7.7k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25802169" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25802169" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42602086/file/original-04babf8c918d513baa2146b4a9703237.png?format=webp&resize=400x300&vertical=center"
+                      alt="Sailing Ship In The Sky Logo boat branding cartoon design icon illustration kids logo mark sailing sea ship sky space trade transport travel vector"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/unom-design" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/1573719/avatars/small/1b299537341c829ddc968d627aeedf40.png?1610610205"
+                        alt="UNOM design"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">UNOM design</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">70</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">2.7k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25801348" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25801348" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42599994/file/original-950ecc2ed3584daf74d2a05ce0a044bd.png?format=webp&resize=400x300&vertical=center"
+                      alt="Snake Star animal blue branding design geometry icon illustration logo mark minimalism pet s snake star"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/badim36" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/1192832/avatars/small/86cebb499d7812794092dbb96ca5a77b.png?1515681607"
+                        alt="Vadim Korotkov"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Vadim Korotkov</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">54</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">5.3k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25792668" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25792668" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42574022/file/original-74cbb28dbb1adb7d11cbc7f1eed3d70f.jpg?crop=0x0-3335x2501&format=webp&resize=400x300&vertical=center"
+                      alt="Wonky Space Fruit Mascot branding carrot cartoon character children creative cute design digital flat food funny illustration kids logo mascot outline space superhero vector"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/manuel-corsi-manu" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/77598/avatars/small/bc40b5a7130b77f4385c47a79d9d71d2.png?1547570222"
+                        alt="Manu"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Manu</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">22</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">625</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25802987" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25802987" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42604239/file/original-0a04c32dcd6cccf4d120a20f7f183866.png?format=webp&resize=400x300&vertical=center"
+                      alt="Website for an Smart Ring ✦ VERRA design interface product service startup ui ux web website"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/halo-lab" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/466659/avatars/small/faff973d070ece355f9ac1280b5aa1c9.png?1697203398"
+                        alt="HALO LAB"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">HALO LAB</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">59</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">2.3k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25787473" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25787473" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42561454/file/original-2df97350363e212651510f1850741a40.jpg?format=webp&resize=400x300&vertical=center"
+                      alt="Complete Brand Identity in just 4 weeks - Ulysses Design Co beverage brand designer brand identity brand identity design brand identity designer branding branding agency branding studio design food branding graphic design hand drawn logo illustration logo logo designer logo package package design restaurant brand identity restaurant logo typography"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/ulysses-design-co" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/3954689/avatars/small/502c7cc4f5b1f6878438c9461aa1bcaa.jpg?1705035698"
+                        alt="Ulysses Design Co"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Ulysses Design Co</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">56</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">4.7k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25800412" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25800412" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42597709/file/original-b3406b9800472b4388cc44d0a3bdbb7a.png?format=webp&resize=400x300&vertical=center"
+                      alt="Dating Mobile iOS App Design android app app design app design concept app design template dashboard dashboard design dating dating app dating app design design ios match mobile mobile app mobile ui online ui ux"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/purrweb-agency" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/5031392/avatars/small/944b08efb66577ba400d5838490ea5b9.png?1597658879"
+                        alt="Purrweb UI/UX Agency"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Purrweb UI/UX Agency</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">195</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">20.7k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25801735" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25801735" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42600936/file/original-fe40cee425bdbd306c54d5639f6d3cf4.png?format=webp&resize=400x300&vertical=center"
+                      alt="Avatar the last Airbender poster aang air airbander avatar branding cartoon design earth elements fire fly graphic design icon icon set illustration manga movie power vector wather"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/almigor" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/458522/avatars/small/62c25a673fa0c68a85418c4d8803b144.png?1729184934"
+                        alt="Aleksandar Savić / Almigor"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Aleksandar Savić / Almigor</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">32</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">2.5k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25801322" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25801322" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42599942/file/original-cbc4d926a1a89d379e6d203e727d0514.png?format=webp&resize=400x300&vertical=center"
+                      alt="Chime – UX & Visual Design for an AI Music Platform ai bento landing page microelements ui ux visual design web website"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/XXXXXXXX-XXXXXX" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/702789/avatars/small/62dc313bebbc78f08ffd3076b6228377.png?1646754829"
+                        alt="Outcrowd"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Outcrowd</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">72</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">4.8k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25763583" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25763583" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/41570530/file/original-8b6a7a715cc7f80437e2cddb4c2a2517.png?format=webp&resize=400x300&vertical=center"
+                      alt="avalontx: AI CRISPR Gene Editing - Synthetic Biology UIUX 3d molecule biotech biotech web design biotech website biotechnology clean crispr crispr website dna drug discovery drug discovery website gene editing minimal modern orange pharmaceutical precision medicine science website synthetic biology therapeutics website"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/samuel-oktavianus" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/1814344/avatars/small/cad0954db7440914bbf5f3ed816c9979.jpg?1718852918"
+                        alt="Samuel Oktavianus"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Samuel Oktavianus</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">69</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">2.2k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25743116" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25743116" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/41507334/file/original-e36358831eb038ad9a97073228cbf7ec.png?format=webp&resize=400x300&vertical=center"
+                      alt="E-commerce Mobile Website Design ecommerce ecommerce website design mobile mobile design mobile website ui ui design ui ux ui ux design ux web design web design inspiration web ui web ui design"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/ronas-it" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/4949363/avatars/small/606bb85ee728fd3d78bbddf7e70b3901.jpg?1676454777"
+                        alt="Ronas IT | UI/UX Team"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Ronas IT | UI/UX Team</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">140</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">13.4k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25801816" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25801816" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42601144/file/original-953545d76005131197c69670e92bbe52.jpg?format=webp&resize=400x300&vertical=center"
+                      alt="FinFlow | Financial Control App app banking app banking services banking solutions digital wallet finance app finance tools fintech ios mobile money money management payment solution paypal personal finances product design revolut ui ux venmo wallet"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/bytetown" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/22206206/avatars/small/7d429731d6bcc352c0089a1414150fa0.png?1740567417"
+                        alt="ByteTown"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">ByteTown</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">103</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">3.2k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25702376" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25702376" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/37427737/file/original-5cdfdb78d5a9e83bad14cdf4bb0aab3f.jpg?format=webp&resize=400x300&vertical=center"
+                      alt="Blind Faith Distillery Secondary Logo brand design brand identity branding branding design clean color hand drawn identity design illustration lettering logo logo design minimal modern modern logo neon typography vintage visual identity"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/XXXXXXXX-XXXXXX" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/3365798/avatars/small/27142d0984a19231593be35a9972bbc4.jpg?1673891024"
+                        alt="Coric Design"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Coric Design</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">30</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">940</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25831789" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25831789" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42690179/file/original-4e9d4c31da4ec69e8f88163ac1651a98.png?format=webp&resize=400x300&vertical=center"
+                      alt="Xylo mark abstract app branding clean coding developer digital fun geometry graphic design innovation logo minimal modern sleek software startup tech"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/dalibor-pajic" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/573008/avatars/small/5f7003ae160231aab3118f0d5b33aecf.png?1555600696"
+                        alt="Dalibor Pajic"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Dalibor Pajic</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">23</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">626</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25710807" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25710807" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/37464227/file/original-8f3dd8c319905958159f79c5dcc16b90.jpg?format=webp&resize=400x300&vertical=center"
+                      alt="Goals Illustrations app branding coins design figma glow goal gradient graphic design illustration lighting mobile modal modern money popup target vector vibrant"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/team-heyo" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/414979/avatars/small/6a3fb4b20c29dce831a74dc7dbf591c4.png?1695741732"
+                        alt="Heyo"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Heyo</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">25</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">1.5k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25763564" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25763564" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/41570484/file/original-aed902ae72eef2e2c125ce6446db2bef.png?format=webp&resize=400x300&vertical=center"
+                      alt="avalontx: AI CRISPR Gene Editing - Precision Medicine Platform bioengineering biotech biotech web design biotech website biotechnology clean crispr crispr website dna drug discovery drug discovery website gene editing minimal modern orange pharmaceutical precision medicine synthetic biology therapeutics therapeutics website"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/samuel-oktavianus" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/1814344/avatars/small/cad0954db7440914bbf5f3ed816c9979.jpg?1718852918"
+                        alt="Samuel Oktavianus"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Samuel Oktavianus</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">117</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">7.1k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25821271" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25821271" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42658307/file/still-967646ac91039f61def235a1191a790f.png?format=webp&resize=400x300&vertical=center"
+                      alt="MyLogin - Animated Illustrations castle character children dragon fantasy green illustration kids school vector"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/balkan-brothers" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/207046/avatars/small/3cf440965628a56a521da9fdc45011ac.png?1710421930"
+                        alt="Balkan Brothers"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Balkan Brothers</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">31</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">4.3k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25826915" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25826915" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42675723/file/original-43a735fc9b9cb1da479507571ab84685.jpg?format=webp&resize=400x300&vertical=center"
+                      alt="G1 / 12 architecture contrast curvy evergreen futurism futurist g gold graphic designer grid icon lettering logo logotype modernism monogram symbol type typography wave"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/ethan-fender" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/544452/avatars/small/787509c98eb48cdd8d09563787a65c5d.png?1715611535"
+                        alt="Ethan Fender 🐦‍⬛"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Ethan Fender 🐦‍⬛</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">35</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">986</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25831087" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25831087" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42688217/file/original-e2624dd4a1cc4c8260a8a3686c3389b5.jpg?format=webp&resize=400x300&vertical=center"
+                      alt="Doctor Bird Logo bird brand branding design doctor fashion illustration jamaica logo logodesign mark minimal regal samadaraginige simple"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/samadara" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/405391/avatars/small/c2d455552fc04fb840faecdff87a37ed.png?1685685535"
+                        alt="Samadara Ginige"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Samadara Ginige</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">26</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">1.7k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25830692" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25830692" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42687026/file/still-f54a125908da2e22483532042aaa526d.gif?format=webp&resize=400x300&vertical=center"
+                      alt="Single vs Multiple abstract animation cavarly color fintech geometry gif illo illustration motion motion graphics multiple procedural shapes single"
+                      style="max-width:400px"
+                    /> <!------ quitar estilo inline y aplicar por CSS ------->
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/XXXXXXXX-XXXXXX" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/77121/avatars/small/69f0572bb0dbd58fbbe622d615aa9b82.png?1543243097"
+                        alt="ILLO"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">ILLO</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">25</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">2.2k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25829033" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25829033" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42682421/file/original-874199ea3a1feb91504947d72a29f084.png?format=webp&resize=400x300&vertical=center"
+                      alt="Interior Design Mobile iOS App android android design app app design app design concept app design template dark theme dashboard dashboard design design interior ios ios design mobile mobile app mobile ui online photo ui ux"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/purrweb-agency">
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/5031392/avatars/small/944b08efb66577ba400d5838490ea5b9.png?1597658879"
+                        alt="Purrweb UI/UX Agency"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Purrweb UI/UX Agency</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">193</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">5.3k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-24942810" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/24942810" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/16823549/file/original-f2a82dc2280890c12d51359b398497ac.jpg?format=webp&resize=400x300&vertical=center"
+                      alt="pictoplasma character character design creature flat gift happy illustration illustrator monster picto pictoplasma yeti"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/XXXXXXXX-XXXXXX" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/35810/avatars/small/505cc3dd31384386870f959cf27bf347.jpeg?1708702439"
+                        alt="Kirk! Wallace"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Kirk! Wallace</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">20</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">1.1k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25831256" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25831256" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42688715/file/original-e8ae08112f3f631c3c43f20fb32dd838.png?format=webp&resize=400x300&vertical=center"
+                      alt="Branding for a Sustainability Company ✦ eeko brand identity branding design identity logo logo design logotype"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/halo-lab" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/466659/avatars/small/faff973d070ece355f9ac1280b5aa1c9.png?1697203398"
+                        alt="HALO LAB"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">HALO LAB</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">59</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">2.3k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25831725" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25831725" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42689980/file/original-8efaa3abcb595e686eb602254e57ea7c.jpg?format=webp&resize=400x300&vertical=center"
+                      alt="3D Elite Hoops Abbreviate Logomark basketball branding hoops logo"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/bob-ewing" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/35877/avatars/small/62126e0f12cb00dfb8d1dcb15e23cf64.jpg?1583936007"
+                        alt="Bob Ewing"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Bob Ewing</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">11</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">698</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25827296" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25827296" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42676900/file/original-9aa1246b201be3357367d0415a6aa249.png?format=webp&resize=400x300&vertical=center"
+                      alt="Interconnected &quot;S&quot; Logo Design brand brand creation brand strategy branding design graphic design hire hiring platform identity illustration interconnected interviewing logo mark s skills symbol symbol development visual identity visual strategy"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/maverick-studio" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/21463860/avatars/small/04a2ddfcbdb55c4bc71f2f09c40a8a0d.png?1736276310"
+                        alt="Maverick Studio"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Maverick Studio</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">25</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">2.3k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25828621" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25828621" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42680969/file/original-bb5aa07c49e5df605097058ce9928197.png?crop=0x0-3201x2401&format=webp&resize=400x300&vertical=center"
+                      alt="Futuristic Healthcare Dashboard with AI-Powered Data Management ai healthcare ai powered ai powered insights analytics artificial intelligence clean ui crypto dark theme dashboard fintech futuristic futuristic theme healthcare healthtech insights medical medical app mobile app popular ui"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/akshay-hooda" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/2909840/avatars/small/b23e8b024594a21af635b24488dc3436.png?1699019651"
+                        alt="Akshay Hooda"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Akshay Hooda</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">53</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">1.6k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25829142" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25829142" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42682753/file/original-27e772c72543c477196211cd69379e51.png?crop=382x286-2814x2110&format=webp&resize=400x300&vertical=center"
+                      alt="RR and dog animal brand branding design dog doggy elegant graphic design letter logo logo design logo designer logodesign logodesigner logotype modern negative space negativespace pet r"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/XXXXXXXX-XXXXXX" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/1700393/avatars/small/4321e40fb501ef264d3c9d9d996ad652.png?1698337873"
+                        alt="Andrii Kovalchuk🇺🇦"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Andrii Kovalchuk🇺🇦</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">50</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">3.3k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25831729" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25831729" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42689991/file/original-1e9eed836c1a91dd2564cb7d937565fb.jpg?crop=733x469-3787x2759&format=webp&resize=400x300&vertical=center"
+                      alt="Sticker Pack animation branding design dog funny graphic design icon illustration line minimal pack pup puppy retro simple sticker ui"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/XXXXXXXX-XXXXXX" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/1008875/avatars/small/631d7ace74f24b5cc04c0374490a7f34.png?1738603846"
+                        alt="Razvan Vezeteu"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Razvan Vezeteu</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">16</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">684</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25830147" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25830147" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42685412/file/original-56f7931bb045c680bcbaaae40001ceea.jpg?format=webp&resize=400x300&vertical=center"
+                      alt="Digital Marketing, logo design brand mark branding creative logo design digital marketing logo growth logo letter logo logo logo design logo mark logos marketing logo design minimalist logo design modern logo modern logo design simple logo design smart logo startup logo"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/XXXXXXXX-XXXXXX" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/4824889/avatars/small/f59fd7f479c4fe699e7d507e9c540c6f.jpg?1618637626"
+                        alt="Masud - Logo Designer"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Masud - Logo Designer</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-pro">Pro</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">106</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">3.6k</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="screenshot-25829979" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25829979" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42684945/file/original-59b6d6a7fa5c5a0332da7af50a813ecc.jpg?format=webp&resize=400x300&vertical=center"
+                      alt="Logo Design - Home Lighting Company bento grid brand identity branding concept creative design graphic design home lighting illustration logo logo design logotype modern logo moon visual identity"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/nixtio" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/1057940/avatars/small/f068710cc8e5fcebcbcd8f1f75d1b4ef.gif?1732126488"
+                        alt="Nixtio"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Nixtio</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count">58</span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count">366</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li id="screenshot-25832204" class="shot-thumbnail-base">
+                <div class="dribble-shot">
+                  <a class="shot-thumbnail-link" href="/shots/25832204" >
+                    <img 
+                      class="shot-thumbnail"
+                      src="https://cdn.dribbble.com/userupload/42691390/file/original-3ecc892c62de1a0b6d008fc25fc161fd.png?format=webp&resize=400x300&vertical=center"
+                      alt="Getting started button card check complete getting started icon install learn more modal play popover progress select video"
+                    />
+                  </a>
+                </div>
+                <div class="shot-details-container">
+                  <div class="user-information">
+                    <a class="hoverable url" href="/attio" >
+                      <img class="photo"
+                        src="https://cdn.dribbble.com/users/4026036/avatars/small/af0b08ca75473f50231fe1271f576548.png?1670519775"
+                        alt="Attio"
+                        style="width:24px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="display-name">Attio</span>
+                    </a>
+                    <a class="badge-link" href="/pro">
+                      <span class="badge badge-team">Team</span>
+                    </a>
+                  </div>
+                  <div class="shot-statistics-container">
+                    <div class="shot-statistic">
+                      <div class="shot-action">
+                        <a class="shot-like" href="/signup/new">
+                          <img class="icon"
+                            src="images/heart.png"
+                            style="width:16px"
+                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                        </a>
+                      </div>
+                      <span class="shot-likes-count"></span>
+                    </div>
+                    <div class="shot-statistic">
+                      <img class="icon"
+                        src="images/eye.png"
+                        style="width: 16px"
+                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      <span class="shot-views-count"></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
     </div>
+    <hr>
+    <!------------------------------ FOOTER AREA -------------------------------->
   </body>
 </html>

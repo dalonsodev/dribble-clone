@@ -1,0 +1,14 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* variables de colores y demás */
+}
+
+a, a:hover, a:visited, a:focus, a:active {
+  text-decoration: none;
+}
