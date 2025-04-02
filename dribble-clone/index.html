@@ -49,9 +49,14 @@
           <form class="site-nav-search">
             <input name="q" type="search" placeholder="What are you looking for?" />
             <button class="site-nav-search__dropdown">
-              Shots <!--Añadir las opciones del "menú desplegable"-->
+              <span>
+                Shots
+                <img src="images/arrow-down.svg" class="arrow-down-icon" alt="arrow down icon" />
+              </span> <!-- "menú desplegable" hecho con JS-->
             </button>
-            <button class="site-nav-search__go">🔍</button> <!---esto necesitaría JS para funcionar--->
+            <button class="btn--primary-alt btn--circle site-nav-search__go">
+              <img class="search-icon" src="images/search.png" alt="search icon"/>
+            </button> <!---esto necesitaría JS para funcionar--->
           </form>
         </div>
         <div class="shots-search-hero__trending-container">
@@ -59,19 +64,21 @@
             <p>Trending searches</p>
           </div>
           <div class="shots-search-hero__trending-tags">
-            <a class="shots-search-hero__trending-tag" href="/search/landing%20page">landing page</a>
-            <a class="shots-search-hero__trending-tag" href="/search/e-commerce">e-commerce</a>
-            <a class="shots-search-hero__trending-tag" href="/search/mobile%20app">mobile app</a>
-            <a class="shots-search-hero__trending-tag" href="/search/logo%20design">logo design</a>
-            <a class="shots-search-hero__trending-tag" href="/search/dashboard">dashboard</a>
-            <a class="shots-search-hero__trending-tag" href="/search/icons">icons</a>
+            <a class="shots-search-hero__trending-tag pill pill--slim pill--gray" href="/search/landing%20page">landing page</a>
+            <a class="shots-search-hero__trending-tag pill pill--slim pill--gray" href="/search/e-commerce">e-commerce</a>
+            <a class="shots-search-hero__trending-tag pill pill--slim pill--gray" href="/search/mobile%20app">mobile app</a>
+            <a class="shots-search-hero__trending-tag pill pill--slim pill--gray" href="/search/logo%20design">logo design</a>
+            <a class="shots-search-hero__trending-tag pill pill--slim pill--gray" href="/search/dashboard">dashboard</a>
+            <a class="shots-search-hero__trending-tag pill pill--slim pill--gray" href="/search/icons">icons</a>
           </div>
         </div>
         <div class="filter-subnav">
           <div class="filter-subnav-inner">
             <div class="filter-views">
-              <a class="form-btn" href="/">
-                <span>Popular</span>
+              <a class="form-btn popular" href="/">
+                <span>Popular
+                  <img src="images/arrow-down.svg" class="arrow-down-icon popular-icon" alt="arrow down icon" />
+                </span>
               </a>
             </div> <!--Configurar el "menú desplegable"-->
             <div class="filter-categories">
@@ -108,8 +115,8 @@
               </ul>
             </div>
             <div class="filter-settings"> <!---esto necesitaría JS para funcionar--->
-              <a class="form-btn" href="/">
-                <img class="icon filter-icon" src="XXXXXXXXXXXXX" />
+              <a class="form-btn filters" href="/">
+                <img class="icon filter-icon" src="images/filter.png" />
                 <span class="label">Filters</span>
               </a>
             </div>
@@ -121,8 +128,9 @@
             <ol class="shots-grid"> <!--el original usa JS pero yo usaré imágenes fijas-->
               <li id="screenshot-25802252" class="shot-thumbnail-base">
                 <div class="dribble-shot">
-                  <a class="shot-thumbnail-link" href="/shots/25802252">
-                    <img class="shot-thumbnail" 
+                  <a class="shot-thumbnail-link" href="/shots/25802252" >
+                    <img 
+                      class="shot-thumbnail"
                       src="https://cdn.dribbble.com/userupload/42602310/file/original-d576afd77b5ecd11d12b3167e89a402d.png?crop=0x0-3201x2401&format=webp&resize=400x300&vertical=center"
                       alt="SUNBORN // Website 3d blacklead blacklead studio bottle cool design digital e commerce product shop ui web web design website"
                     />
@@ -130,11 +138,10 @@
                 </div>
                 <div class="shot-details-container">
                   <div class="user-information">
-                    <a class="hoverable url" href="/blacklead-studio" >
-                      <img class="photo" 
+                    <a class="hoverable url" href="/emoteagency">
+                      <img class="photo"
                         src="https://cdn.dribbble.com/users/3537662/avatars/small/fa89ee31a92bff70db88c84bafc9b7ef.png?1688500299"
                         alt=""
-                        style="width:24px"
                       />
                       <span class="display-name">BL/S®</span>
                     </a>
@@ -146,20 +153,17 @@
                     <div class="shot-statistic">
                       <div class="shot-action">
                         <a class="shot-like" href="/signup/new">
-                          <img class="icon" 
+                          <img class="icon"
                             src="images/heart.png"
-                            style="width:16px"
-                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                          /> 
                         </a>
                       </div>
                       <span class="shot-likes-count">105</span>
                     </div>
                     <div class="shot-statistic">
-                      <img
-                        class="icon"
+                      <img class="icon"
                         src="images/eye.png"
-                        style="width:16px"
-                      />
+                      /> 
                       <span class="shot-views-count">7.7k</span>
                     </div>
                   </div>
@@ -181,8 +185,7 @@
                       <img class="photo"
                         src="https://cdn.dribbble.com/users/11502486/avatars/small/a8456497e26e27118763af6fc5b5fbcc.png?1650726363"
                         alt="Emote"
-                        style="width:24px"
-                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      />
                       <span class="display-name">Emote</span>
                     </a>
                     <a class="badge-link" href="/pro">
@@ -195,8 +198,7 @@
                         <a class="shot-like" href="/signup/new">
                           <img class="icon"
                             src="images/heart.png"
-                            style="width:16px"
-                          /> <!------ quitar estilo inline y aplicar por CSS ------->
+                          /> 
                         </a>
                       </div>
                       <span class="shot-likes-count">147</span>
@@ -204,8 +206,7 @@
                     <div class="shot-statistic">
                       <img class="icon"
                         src="images/eye.png"
-                        style="width: 16px"
-                      /> <!------ quitar estilo inline y aplicar por CSS ------->
+                      /> 
                       <span class="shot-views-count">12.2k</span>
                     </div>
                   </div>
@@ -245,14 +246,14 @@
                           /> <!------ quitar estilo inline y aplicar por CSS ------->
                         </a>
                       </div>
-                      <span class="shot-likes-count"></span>
+                      <span class="shot-likes-count">121</span>
                     </div>
                     <div class="shot-statistic">
                       <img class="icon"
                         src="images/eye.png"
                         style="width: 16px"
                       /> <!------ quitar estilo inline y aplicar por CSS ------->
-                      <span class="shot-views-count"></span>
+                      <span class="shot-views-count">5.9k</span>
                     </div>
                   </div>
                 </div>
