@@ -140,6 +140,7 @@ a.site-nav__logo:hover {
 .site-nav-main__link {
   font-size: 14px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .site-nav__actions-container {
@@ -147,6 +148,7 @@ a.site-nav__logo:hover {
   align-items: center;
   margin-left: auto;
   gap: 16px;
+  white-space: nowrap;
 }
 
 .site-nav__signup {
@@ -402,16 +404,16 @@ li.category {
   padding-bottom: 10px;
 }
 
-li:first-of-type {
+li.category-active {
   background: #f8f7f4; /* the "active" one */
 }
 
-li:first-of-type a:hover {
+li.category-active a:hover {
   color: var(--site-text-color);
   transition: background 200ms ease;
 }
 
-li:first-of-type:hover {
+li.category-active:hover {
   background-color: #f5f3f0;
   cursor: pointer;
   color: var(--site-text-color);
@@ -447,17 +449,34 @@ img.filter-icon {
   flex-direction: column;
 }
 
-.dribble-shot img.shot-thumbnail {
+.dribble-shot {
   border-radius: 8px;
-  padding-bottom: 2%;
+  overflow: hidden;
+  background: red;
+}
+
+img.shot-thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+}
+
+.shot-thumbnail-link {
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .shot-details-container {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 8px;
 }
 
 .user-information {
@@ -466,20 +485,36 @@ img.filter-icon {
   flex-flow: row nowrap;
 }
 
-.hoverable span {
-  vertical-align: super;
+.hoverable {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
+.hoverable img.photo {
+  width: 24px;
+  border-radius: 50%;
+}
+
+a.hoverable:hover {
+  color: initial;
+}
+
+
 .badge-link span {
-  padding: 3px;
-  margin-left: 8px;
-  vertical-align: super;
-  font-size: 10px;
   text-transform: uppercase;
+  vertical-align: 2px;
+  font-size: 10px;
   font-weight: 500;
-  color: #fff;
+  margin-left: 8px;
+  padding: 3px;
   background: #ccc;
+  color: #fff;
   border-radius: 3px;
+}
+
+.badge-link span:hover {
+  background: var(--link-color-hover, #3d3d4e);
 }
 
 .shot-statistics-container {
@@ -487,20 +522,66 @@ img.filter-icon {
   gap: 10px;
 }
 
-.hoverable img {
-  width: 24px;
-}
-
 .shot-statistic {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
 }
 
 .shot-like > img.icon {
   width: 16px;
   vertical-align: baseline;
+  filter: grayscale(90%);
+}
+
+.shot-like > img.icon:hover {
+  filter: invert(74%) sepia(68%) saturate(3725%) hue-rotate(276deg) brightness(92%) contrast(99%);
 }
 
 img[src*="eye.png"] {
   width: 16px;
   height: 11px;
+}
+
+.shot-statistic span[class$="count"] {
+  font-size: 13px;
+  padding-left: 3px;
+  color: #9e9ea7;
+}
+
+#screenshot-25830692 {
+  max-width: 500px;
+}
+
+.login-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-to-continue {
+  padding: 10px 20px;
+  font-size: 13px;
+  margin-top: 40px;
+  max-width: 400px;
+}
+
+.back-to-top {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  bottom: 15px;
+}
+
+.back-to-top a img {
+  width: 50px;
+  height: 50px;
+  border: none;
+  opacity: 0.37;
+  transform: translateX(104%);
+}
+
+.back-to-top a img:hover {
+  background-color: #4d4d4d;
+  border: none;
+  border-radius: 50%;
+  opacity: .75;
 }
