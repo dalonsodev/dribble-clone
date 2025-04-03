@@ -13,14 +13,13 @@
   /* Nav */
   --site-nav-height: 92px;
   --site-nav-gutter: 40px;
-
+  
   /* Text */
   --site-text-color: #0d0c22;
-
+  
   /* Links */
   --link-color: #060318;
   --link-hover-color: #7b7194;
-  
 }
 
 .btn {
@@ -46,7 +45,7 @@
   --btn-border-color: var(--btn-bg-color);
   --btn-border-color-hover: var(--btn-bg-color-hover);
 }
-  
+
 .btn--circle {
   /* Button circle */
   --btn-width: var(--btn-height);
@@ -75,6 +74,10 @@
 }
 
 /* CUSTOM VARIABLES END */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: var(--site-text-color);
@@ -569,6 +572,8 @@ img[src*="eye.png"] {
   justify-content: flex-end;
   position: sticky;
   bottom: 15px;
+  right: 20px;
+  z-index: 99999;
 }
 
 .back-to-top a img {
@@ -584,4 +589,88 @@ img[src*="eye.png"] {
   border: none;
   border-radius: 50%;
   opacity: .75;
+}
+
+/* ------- CATEGORIES ANIMATED SLIDER START ------- */
+
+.site-footer-marquee {
+  --grid-gap: 24px;
+  --item-speed: 2s;
+  --item-count: 16;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding-inline: 24px;
+}
+
+.site-footer-marquee a {
+  color: var(--link-color);
+}
+
+.site-footer-marquee__track {
+  overflow: hidden;
+}
+
+.footer-marquee-desktop {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.site-footer-marquee__grid {
+  display: grid;
+  grid-auto-columns: min-content;
+  grid-auto-flow: column;
+  width: fit-content;
+  gap: var(--grid-gap);
+  animation: footerMarqueeSlide linear infinite;
+  animation-duration: calc(var(--item-speed, 2s) * var(--item-count, 8));
+  transition: animation-timing-function 0.5s ease-out;
+  will-change: transform;
+}
+
+.site-footer-marquee__grid:hover {
+  --grid-x-offset: -16px;
+  animation-play-state: paused;
+}
+
+@keyframes footerMarqueeSlide {
+  0% { transform:translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.site-footer-marquee-item {
+  --item-media-width: 200px;
+  --item-media-height: 150px;
+  position: relative;
+}
+
+.site-footer-marquee-item--duplicate {
+  display: block;
+}
+
+.site-footer-marquee-item__media {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: var(--item-media-width);
+  height: var(--item-media-height);
+  z-index: 1;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background-color: #9e9ea7;
+}
+
+.site-footer-marquee-item__title {
+  margin-top: 12px;
+  color: #0d0c22;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ------- END OF CATEGORIES ANIMATED SLIDER ------- */
+
+.site-footer__upper {
+  padding: 200px; /* ------- this is temporary -------- */
 }
