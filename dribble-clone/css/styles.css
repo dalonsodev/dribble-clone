@@ -609,6 +609,7 @@ img[src*="eye.png"] {
 
 .site-footer-marquee__track {
   overflow: hidden;
+  padding-top: 30px;
 }
 
 .footer-marquee-desktop {
@@ -618,6 +619,7 @@ img[src*="eye.png"] {
 }
 
 .site-footer-marquee__grid {
+  position: relative;
   display: grid;
   grid-auto-columns: min-content;
   grid-auto-flow: column;
@@ -639,7 +641,7 @@ img[src*="eye.png"] {
   100% { transform: translate3d(-50%, 0, 0); }
 }
 
-.site-footer-marquee-item {
+.site-footer-marquee-item, .site-footer-marquee-item--duplicate {
   --item-media-width: 200px;
   --item-media-height: 150px;
   position: relative;
@@ -667,6 +669,87 @@ img[src*="eye.png"] {
   color: #0d0c22;
   font-size: 15px;
   font-weight: 500;
+}
+
+/* ::BEFORE AND ::AFTER */
+
+.site-footer-marquee-item__stack {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--item-media-width);
+  height: var(--item-media-height);
+}
+
+.site-footer-marquee-item__stack::after, .site-footer-marquee-item__stack::before {
+  display: block;
+  content: "";
+  --stack-translate-delay: 0s;
+  --stack-offset-x: -10px;
+  --stack-offset-y: -10px;
+  position: absolute;
+  top: var(--stack-offset-y);
+  right: var(--stack-offset-x);
+}
+
+.site-footer-marquee-item__stack::before {
+  width: 96%;
+  height: 96%;
+  border-radius: 12px;
+  border: 2px solid #fff; /* cambiar color al correcto #fff */
+  background: var(--stack-color-1, rgba(0,0,0,0.1));
+  z-index: 0;
+}
+
+.site-footer-marquee-item__stack::after {
+  top: calc(var(--stack-offset-y) / 2);
+  right: calc(var(--stack-offset-x) / 2);
+  width: 98%;
+  height: 98%;
+  border: 2px solid #fff; /* cambiar color al correcto #fff */
+  border-radius: 10px;
+  background: var(--stack-color-2, rgba(255,255,255,0.1));
+  z-index: 0;
+}
+
+.site-footer-marquee-item[href$="/illustration" i] {
+  --stack-color-1: #EDF3D8;
+  --stack-color-2: #E6FBFE;
+}
+
+.site-footer-marquee-item[href$="/mobile" i] {
+  --stack-color-1: #EDF3D8;
+  --stack-color-2: #E3EBFD;
+}
+
+.site-footer-marquee-item[href$="/product-design" i] {
+  --stack-color-1: #DDFDE8;
+  --stack-color-2: #EDDDFB;
+}
+
+.site-footer-marquee-item[href$="/branding" i] {
+  --stack-color-2: #E6FDC9;
+  --stack-color-1: #EDF3D8;
+}
+
+.site-footer-marquee-item[href$="/web-design" i] {
+  --stack-color-1: #EDDDFB;
+  --stack-color-2: #EDF3D8;
+}
+
+.site-footer-marquee-item[href$="/typography" i] {
+  --stack-color-1: #EDF3D8;
+  --stack-color-2: #DDFDE8;
+}
+
+.site-footer-marquee-item[href$="/print" i] {
+  --stack-color-1: #DDFDE8;
+  --stack-color-2: #E6FBFE;
+}
+
+.site-footer-marquee-item[href$="/animation" i] {
+  --stack-color-1: #E3EBFD;
+  --stack-color-2: #F6D9FB;
 }
 
 /* ------- END OF CATEGORIES ANIMATED SLIDER ------- */
