@@ -90,6 +90,7 @@ a, a:hover, a:visited, a:focus, a:active {
 
 a {
   color: var(--link-color);
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a:hover {
@@ -100,12 +101,20 @@ ul, ol {
   list-style-type: none;
 }
 
-ul {
+ul:not(.site-footer__links, .site-footer__lower-links) {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+}
+
+.site-nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 99999;
 }
 
 a.site-nav__logo {
@@ -184,6 +193,7 @@ a.site-nav__logo:hover {
   flex-direction: column;
   align-items: center;
   padding: 50px var(--site-nav-gutter);
+  padding-bottom: 0;
   gap: 30px;
 }
 
@@ -438,7 +448,8 @@ img.filter-icon {
 
 .wrap-inner {
   width: 100%;
-  padding: 32px 32px 40px;
+  padding: 0px 32px 40px;
+  margin-top: -20px;
 }
 
 .shots-grid {
@@ -684,21 +695,28 @@ img[src*="eye.png"] {
 .site-footer-marquee-item__stack::after, .site-footer-marquee-item__stack::before {
   display: block;
   content: "";
-  --stack-translate-delay: 0s;
   --stack-offset-x: -10px;
   --stack-offset-y: -10px;
   position: absolute;
   top: var(--stack-offset-y);
   right: var(--stack-offset-x);
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition-delay: var(--stack-translate-delay, .1s);
 }
 
 .site-footer-marquee-item__stack::before {
+  --stack-translate-delay: 0s;
   width: 96%;
   height: 96%;
   border-radius: 12px;
   border: 2px solid #fff; /* cambiar color al correcto #fff */
   background: var(--stack-color-1, rgba(0,0,0,0.1));
   z-index: 0;
+  opacity: 0.4;
+}
+
+.site-footer-marquee-item:hover .site-footer-marquee-item__stack::before {
+  transform: translate(5px, -5px);
 }
 
 .site-footer-marquee-item__stack::after {
@@ -710,6 +728,10 @@ img[src*="eye.png"] {
   border-radius: 10px;
   background: var(--stack-color-2, rgba(255,255,255,0.1));
   z-index: 0;
+}
+
+.site-footer-marquee-item:hover .site-footer-marquee-item__stack::after {
+  transform: translate(2px, -2px);
 }
 
 .site-footer-marquee-item[href$="/illustration" i] {
@@ -754,6 +776,70 @@ img[src*="eye.png"] {
 
 /* ------- END OF CATEGORIES ANIMATED SLIDER ------- */
 
-.site-footer__upper {
-  padding: 200px; /* ------- this is temporary -------- */
+/* FOOTER STARTS */
+
+.site-footer__container {
+  padding: 80px 32px 0 32px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
+
+.site-footer__upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 72px 0 44px;
+}
+
+.site-footer__logo img {
+  width: 134px;
+  height: 30px;
+  margin-left: -14px;
+  margin-right: -14px;
+}
+
+.site-footer__links {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.site-footer__links li {
+  padding: 18px;
+  white-space: nowrap;
+}
+
+.site-footer__social-links {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 16px;
+}
+
+.site-footer__social-link img {
+  width: 18px;
+  height: 18px;
+  vertical-align: bottom;
+}
+
+.site-footer__lower {
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 0;
+}
+
+.site-footer__lower-links {
+  display: flex;
+  column-gap: 16px;
+  font-size: 15px;
+}
+
+.site-footer__lower-links, .site-footer__lower-links li a {
+  color: #6e6d7a;
+}
+
+ul[class*=site-footer] a:hover {
+  color: initial;
+}
+
+/* END OF FOOTER */
