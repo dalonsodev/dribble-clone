@@ -10,6 +10,13 @@
     <!------------------------------ HEADER AND NAVIGATION -------------------------------->
     <div class="site-nav">
       <div class="site-nav__wrapper">
+        <input id="menu-toggle" class="menu-button" type="checkbox">
+        <div class="site-nav__dark-overlay"></div>
+        <label for="menu-toggle" class="site-nav-burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </label>
         <a class="site-nav__logo" href="/">
           <title>Dribbble: the community for graphic design</title>
           <img
@@ -207,7 +214,7 @@
         <!------------------------------ MAIN CONTENT GRID -------------------------------->
         <div class="wrap-inner">
           <div id="content" role="main">
-            <ol class="shots-grid"> <!--el original usa JS pero yo usaré imágenes fijas-->
+            <ol class="shots-grid">
               <li id="screenshot-25802252" class="shot-thumbnail-base">
                 <div class="dribble-shot">
                   <a class="shot-thumbnail-link" href="/shots/25802252" >
