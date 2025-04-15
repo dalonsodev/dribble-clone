@@ -155,8 +155,6 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
 }
 
 .site-nav-main {
-  display: inherit;
-  align-items: flex-start;
   padding: 32px;
   background: #fff;
   border-top: 1px solid #e7e7e9;
@@ -175,7 +173,6 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
 
 .site-nav-main__item {
   position: relative;
-  display: flex;
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
@@ -216,12 +213,6 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
   opacity: 1;
 }
 
-.menu-button:checked ~ .site-nav-main > .site-nav-main__list {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
 .burger-line {
   width: 100%;
   height: 3px;
@@ -257,13 +248,14 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
 
   .site-nav-main__list {
     position: relative;
-  }
-
-  .site-nav-main__item {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+  
+  .site-nav-main__item {
+    display: block;
+    position: relative;
     width: 100%;
     transform: translateX(-30px);
     transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -284,6 +276,7 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
   
   .site-nav-main__item:nth-child(4) {
     transition-delay: 0.09s;
+    padding-bottom: 0;
   }
   
   .site-nav-main__link {
