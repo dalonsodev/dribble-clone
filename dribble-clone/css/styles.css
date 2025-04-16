@@ -15,8 +15,8 @@
   font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   
   /* Nav */
-  --site-nav-height: 92px;
-  --site-nav-gutter: 40px;
+  --site-nav-height: 58px;
+  --site-nav-gutter: 16px;
   --site-nav-main-gap: 32px;
   --site-nav-sub-offset: 17px;
   --site-nav-sub-gap: 24px;
@@ -137,7 +137,6 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
   height: var(--site-nav-height);
   background: #fff;
   z-index: 9999999;
-
 }
 
 .menu-button:checked .site-nav {
@@ -486,7 +485,9 @@ a.site-nav__logo:hover {
 
 .btn {
   display: inline-flex;
-  place-items: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   font-size: var(--btn-font-size);
   font-weight: var(--btn-font-weight);
   height: var(--btn-height);
@@ -518,21 +519,22 @@ a.site-nav__logo:hover {
 }
 
 .shots-search-hero__heading {
+  max-width: 690px;
   font-family: "Source Serif 4", Georgia, serif;
-  font-size: 62px;
+  font-size: 32px;
   font-weight: 100;
   line-height: 1.2;
-  max-width: 690px;
   text-align: center;
 }
 
 .shots-search-hero__subheading {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
   max-width: 560px;
   text-align: center;
   letter-spacing: 1px;
+  margin-top: -9px;
 }
 
 .shots-search-hero__input-container {
@@ -545,6 +547,17 @@ a.site-nav__logo:hover {
   z-index: -1;
 }
 
+@media (min-width: 768px) {
+  .shots-search-hero__heading {
+    font-size: 62px;
+  }
+  .shots-search-hero__subheading {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
 .site-nav-search {
   display: inline-flex;
   justify-content: center;
@@ -554,7 +567,7 @@ a.site-nav__logo:hover {
   flex-basis: 0%;
   width: 100%;
   height: 100%;
-  padding: 0 8px 0 0;
+  padding: 0 6px 0 0;
   background-color: #f3f3f6;
   outline: 3px solid transparent;
   outline-offset: -3px;
@@ -713,6 +726,25 @@ a.shots-search-hero__trending-tag:hover {
 
   .site-footer__container {
     padding: 0 32px;
+  }
+}
+
+@media (max-width: 789px) {
+  .site-nav__signup {
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+
+  .site-nav__login {
+    --btn-height: 40px;
+    --btn-padding: 24px;
+    --btn-font-size: 14px;
+    padding-top: 0 !important;
+  }
+
+  .site-nav__login p {
+    position: relative;
+    top: 10px;
   }
 }
 
@@ -1103,12 +1135,12 @@ img[src*="eye.png"] {
 }
 
 .back-to-top {
-  right: 20px;
+  right: 20px; /* no hace nada (creo) */
   display: flex;
   justify-content: flex-end;
   position: sticky;
   bottom: 15px;
-  z-index: -1;
+  z-index: 3;
 }
 
 .back-to-top a img {
