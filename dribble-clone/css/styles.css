@@ -788,6 +788,7 @@ a.shots-search-hero__trending-tag:hover {
     width: calc(100% + 30px);
     margin: 8px -15px 0;
     padding: 15px 0 0;
+    line-height: 20px;
   }
 
   .wrap-inner {
@@ -796,20 +797,23 @@ a.shots-search-hero__trending-tag:hover {
 }
 
 @media (min-width: 1200px) {
+  :root {
+    --banner-gutter: 72px;
+  }
+
   .filter-subnav {
     padding-right: 72px;
     padding-left: 72px;
-  }
-
-  :root {
-    --banner-gutter: 72px;
   }
 }
 
 .form-btn {
   border: 1px solid rgba(231, 231, 233, 0.9);
   margin-right: 15px;
-  /*padding: .7em 1.3em;*/
+}
+
+.form-btn:not(btn.filters) {
+  margin-right: 0;
 }
 
 img.popular-icon {
@@ -846,6 +850,7 @@ img.popular-icon {
 .filter-categories ul {
   display: flex;
   padding-inline-start: 0 !important;
+  margin: 0;
 }
 
 .filter-categories {
@@ -1462,6 +1467,11 @@ ul[class*=site-footer] a:hover {
 @media (min-width: 1200px) {
   .site-footer__links {
     column-gap: 40px;
+  }
+
+  .wrap-inner {
+    padding-right: 72px;
+    padding-left: 72px;
   }
 }
 
