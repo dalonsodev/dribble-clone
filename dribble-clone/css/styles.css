@@ -428,6 +428,11 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
     color: var(--site-text-color);
   }
 
+  .site-footer-marquee__track {
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+
   /* La animación del carrusel funcionaría pero la comento (desactivandola) porque debería detenerse una vez el usuario inicia el scroll (javascript)
 
   .site-footer-marquee__track {
@@ -494,6 +499,12 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
     animation: footerMarqueeSlide linear infinite;
     animation-duration: calc(var(--item-speed, 2s) * var(--item-count, 8));
     transition: animation-timing-function 0.5s ease-out;
+  }
+
+  .footer-marquee-desktop {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
   }
   
 }
@@ -673,6 +684,7 @@ input[name="q"]:focus-visible {
   display: inline-flex;
   flex-direction: row;
   flex-shrink: 0;
+  color: #3a3546;
 }
 
 .site-nav-search__dropdown:hover {
@@ -926,7 +938,6 @@ img.popular-icon {
   white-space: nowrap;
   font-size: var(--btn-font-size);
   font-weight: 500;
-  padding: 0 2px;
   gap: 8px;
   scrollbar-width: none;
 }
@@ -1269,7 +1280,6 @@ img[src*="eye.png"] {
 
 .site-footer-marquee__track {
   padding-top: 60px;
-  overflow: hidden;
 }
 
 @keyframes footer-marquee-mobile-wiggle {
@@ -1279,12 +1289,6 @@ img[src*="eye.png"] {
   100% {
     transform: translate3d(-20px, 0, 0);
   }
-}
-
-.footer-marquee-desktop {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
 }
 
 .site-footer-marquee__grid {
@@ -1314,7 +1318,7 @@ img[src*="eye.png"] {
 }
 
 .site-footer-marquee-item--duplicate {
-  display: block;
+  display: none;
 }
 
 .site-footer-marquee-item__media {
@@ -1542,6 +1546,12 @@ ul[class*=site-footer] a:hover {
   .wrap-inner {
     padding-right: 72px;
     padding-left: 72px;
+  }
+}
+
+@media (min-width: 1205px) {
+  .site-footer-marquee-item--duplicate {
+    display: block;
   }
 }
 
