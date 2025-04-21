@@ -222,6 +222,7 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
   visibility: visible;
   opacity: 1;
   cursor: pointer;
+  overflow-y: scroll;
 }
 
 .burger-line {
@@ -426,6 +427,18 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
   .site-nav-main__link:hover, .site-nav-main__link:focus-within {
     color: var(--site-text-color);
   }
+
+  /* La animación del carrusel funcionaría pero la comento (desactivandola) porque debería detenerse una vez el usuario inicia el scroll (javascript)
+
+  .site-footer-marquee__track {
+    animation: footer-marquee-mobile-wiggle 1.8s alternate-reverse infinite ease-in-out;
+  }
+
+  .site-footer-marquee__grid {
+    overflow-x: scroll;
+  }
+
+  Fin del comentario */
 }
 
 /* more than 1205px */
@@ -475,6 +488,12 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
   
   .site-nav-main__item:first-child {
     margin: 0 0 0 calc(-1 * (var(--site-nav-main-gap) / 2));
+  }
+
+  .site-footer-marquee__grid {
+    animation: footerMarqueeSlide linear infinite;
+    animation-duration: calc(var(--item-speed, 2s) * var(--item-count, 8));
+    transition: animation-timing-function 0.5s ease-out;
   }
   
 }
@@ -1249,8 +1268,17 @@ img[src*="eye.png"] {
 }
 
 .site-footer-marquee__track {
+  padding-top: 60px;
   overflow: hidden;
-  padding-top: 30px;
+}
+
+@keyframes footer-marquee-mobile-wiggle {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-20px, 0, 0);
+  }
 }
 
 .footer-marquee-desktop {
@@ -1266,9 +1294,6 @@ img[src*="eye.png"] {
   grid-auto-flow: column;
   width: fit-content;
   gap: var(--grid-gap);
-  animation: footerMarqueeSlide linear infinite;
-  animation-duration: calc(var(--item-speed, 2s) * var(--item-count, 8));
-  transition: animation-timing-function 0.5s ease-out;
   will-change: transform;
 }
 
@@ -1278,7 +1303,7 @@ img[src*="eye.png"] {
 }
 
 @keyframes footerMarqueeSlide {
-  0% { transform:translate3d(0, 0, 0); }
+  0% { transform: translate3d(0, 0, 0); }
   100% { transform: translate3d(-50%, 0, 0); }
 }
 
