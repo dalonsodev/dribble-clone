@@ -13,6 +13,7 @@
 :root {
   /* Globals */
   font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-feature-settings: 'ss01';
   overflow-x: hidden;
   --banner-gutter: 32px;
   
@@ -93,6 +94,13 @@
   --pill-gray-bg-color: #f3f3f6;
   --pill-gray-border-color: #f3f3f6;
   --pill-gray-text-color: #3a3546;
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('../assets/fonts/MonaSansVF-Regular.woff2') format('woff2');
+  font-weight: 200 900;
+  font-display: swap;
 }
 
 /* CUSTOM VARIABLES END */
@@ -430,7 +438,6 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
 
   .site-footer-marquee__track {
     overflow-x: scroll;
-    scrollbar-width: none;
   }
 
   /* La animación del carrusel funcionaría pero la comento (desactivandola) porque debería detenerse una vez el usuario inicia el scroll (javascript)
@@ -595,13 +602,22 @@ a.site-nav__logo:hover {
   gap: 30px;
 }
 
+@font-face {
+  font-family: 'Source Serif 4 Dribbble';
+  src: url('../assets/fonts/SourceSerif4-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 .shots-search-hero__heading {
+  font-family: "Source Serif 4", Georgia, serif !important;
   max-width: 690px;
-  font-family: "Source Serif 4", Georgia, serif;
   font-size: 32px;
-  font-weight: 100;
+  font-weight: 400;
   line-height: 1.2;
   text-align: center;
+  font-feature-settings: "ss01";
 }
 
 .shots-search-hero__subheading {
@@ -610,7 +626,7 @@ a.site-nav__logo:hover {
   line-height: 17px;
   max-width: 560px;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   margin-top: -9px;
 }
 
@@ -671,6 +687,8 @@ input[name="q"] {
   padding: 18px;
   border: none;
   background-color: transparent;
+  color: rgb(50, 46, 60);
+  font-size: 14px;
 }
 
 input[name="q"]:focus-visible {
@@ -678,13 +696,16 @@ input[name="q"]:focus-visible {
 }
 
 .site-nav-search__dropdown {
-  font-weight: 600;
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3px;
   border: none;
   background-color: transparent;
   display: inline-flex;
   flex-direction: row;
   flex-shrink: 0;
   color: #3a3546;
+  font-weight: 600;
 }
 
 .site-nav-search__dropdown:hover {
@@ -699,7 +720,7 @@ input[name="q"]:focus-visible {
 }
 
 button.site-nav-search__go {
-  width: 48px;
+  width: 40px;
   height: 40px;
   padding: 3px 0 var(--btn-padding);
   margin-top: 1px;
@@ -713,6 +734,7 @@ button.site-nav-search__go {
   gap: var(--btn-gap, 8px);
   cursor: pointer;
   transition: 0.15s cubic-bezier(0.32, 0, 0.59, 0.03);
+  flex-shrink: 0;
 }
 
 button.site-nav-search__go:hover {
@@ -741,6 +763,8 @@ div.shots-search-hero__trending-container {
   margin-right: 10px;
   font-size: var(--btn-font-size);
   color: #9890ac;
+  font-size: 15px;
+  letter-spacing: 0px;
 }
 
 div.shots-search-hero__trending-tags {
@@ -756,7 +780,9 @@ a.shots-search-hero__trending-tag {
   border: 1px solid transparent;
   border-radius: 9999999px;
   font-weight: var(--pill-slim-font-weight);
-  color: var(--pill-text-color);
+  color: #0d0c22;
+  font-size: 14px;
+  letter-spacing: 0;
 }
 
 a.shots-search-hero__trending-tag:hover {
@@ -813,12 +839,14 @@ a.shots-search-hero__trending-tag:hover {
     --btn-height: 40px;
     --btn-padding: 24px;
     --btn-font-size: 14px;
-    padding-top: 0 !important;
+    padding-top: 3px !important;
   }
 
   .site-nav__login p {
     position: relative;
     top: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
   }
 }
 
@@ -904,6 +932,8 @@ img.popular-icon {
   white-space: nowrap;
   height: 40px;
   padding: 18px 24px 18px 18px; 
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .form-btn.popular:hover {
@@ -949,6 +979,8 @@ li.category {
   border-radius: 9999999px;
   line-height: 20px;
   vertical-align: baseline;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 li.category-active {
@@ -1339,6 +1371,7 @@ img[src*="eye.png"] {
   color: #0d0c22;
   font-size: 15px;
   font-weight: 500;
+  padding-bottom: 5px;
 }
 
 /* SLIDER ::BEFORE AND ::AFTER */
@@ -1478,6 +1511,11 @@ img[src*="eye.png"] {
   padding: 0;
 }
 
+.site-footer__link {
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
 .site-footer__social-links {
   display: grid;
   grid-auto-flow: column;
@@ -1499,6 +1537,7 @@ img[src*="eye.png"] {
   padding: 32px 0;
   line-height: 20px;
   font-size: 15px;
+  letter-spacing: -0.5px;
 }
 
 .site-footer__lower-links {
