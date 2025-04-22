@@ -184,7 +184,7 @@
           <div class="filter-categories">
             <span class="scroll scroll-backward"></span> 
             <span class="scroll scroll-forward"></span>
-            <ul>
+            <ul class="filter-categories__list">
               <li class="category category-active">
                 <a href="/shots/popular/">Discover</a>
               </li>
@@ -216,10 +216,178 @@
           </div>
           <div class="filter-settings"> <!---esto necesitaría JS para funcionar--->
             <a class="form-btn filters" href="/">
-              <img class="icon filter-icon" src="images/filter.png" />
-              <span class="label">Filters</span>
+              <label for="filters-toggle">
+                <input type="checkbox" name="filters-toggle" id="filters-toggle">
+                <img class="icon filter-icon" src="images/filter.png" />
+                Filters
+              </label>
             </a>
           </div>
+        </div>
+        <div class="shot-filters">
+          <form action="/" class="shot-filters-form">
+            <fieldset class="find-shots-tag">
+              <label for="tag">Tags</label>
+              <div class="input-with-icon">
+                <input type="search" name="tag" id="tag">
+                <img 
+                  class="icon icon-search" 
+                  src="images/search.png" 
+                  alt="" 
+                  aria-hidden="true"
+                />
+              </div>
+            </fieldset>
+            <fieldset class="find-shots-color">
+              <label for="color">Color</label>
+              <div class="input-with-icon">
+                <input type="search" name="color" id="color" max-lenght="7" pattern="[a-fA-F\d]+" placeholder="Enter hex or select">
+                <img 
+                  class="icon icon-color"
+                  src="images/color-wheel.png" 
+                  alt="" 
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="btn-dropdown-options">
+                <ul class="color-chips group">
+                  <li class="color-1"><a href="" id="color-1"></a></li>
+                  <li class="color-2"><a href="" id="color-2"></a></li>
+                  <li class="color-3"><a href="" id="color-3"></a></li>
+                  <li class="color-4"><a href="" id="color-4"></a></li>
+                  <li class="color-5"><a href="" id="color-5"></a></li>
+                  <li class="color-6"><a href="" id="color-6"></a></li>
+                  <li class="color-7"><a href="" id="color-7"></a></li>
+                  <li class="color-8"><a href="" id="color-8"></a></li>
+                  <li class="color-9"><a href="" id="color-9"></a></li>
+                  <li class="color-10"><a href="" id="color-10"></a></li>
+                  <li class="color-11"><a href="" id="color-11"></a></li>
+                  <li class="color-12"><a href="" id="color-12"></a></li>
+                  <li class="color-13"><a href="" id="color-13"></a></li>
+                  <li class="color-14"><a href="" id="color-14"></a></li>
+                  <li class="color-15"><a href="" id="color-15"></a></li>
+                  <li class="color-16"><a href="" id="color-16"></a></li>
+                  <li class="color-17"><a href="" id="color-17"></a></li>
+                  <li class="color-18"><a href="" id="color-18"></a></li>
+                  <li class="color-19"><a href="" id="color-19"></a></li>
+                  <li class="color-20"><a href="" id="color-20"></a></li>
+                  <li class="color-21"><a href="" id="color-21"></a></li>
+                  <li class="color-22"><a href="" id="color-22"></a></li>
+                  <li class="color-23"><a href="" id="color-23"></a></li>
+                  <li class="color-24"><a href="" id="color-24"></a></li>
+                  <li class="color-25"><a href="" id="color-25"></a></li>
+                  <li class="color-26"><a href="" id="color-26"></a></li>
+                  <li class="color-27"><a href="" id="color-27"></a></li>
+                  <li class="color-28"><a href="" id="color-28"></a></li>
+                  <li class="color-29"><a href="" id="color-29"></a></li>
+                  <li class="color-30"><a href="" id="color-30"></a></li>
+                  <li class="color-31"><a href="" id="color-31"></a></li>
+                  <li class="color-32"><a href="" id="color-32"></a></li>
+                  <li class="color-33"><a href="" id="color-33"></a></li>
+                  <li class="color-34"><a href="" id="color-34"></a></li>
+                  <li class="color-35"><a href="" id="color-35"></a></li>
+                  <li class="color-36"><a href="" id="color-36"></a></li>
+                  <li class="color-37"><a href="" id="color-37"></a></li>
+                  <li class="color-38"><a href="" id="color-38"></a></li>
+                  <li class="color-39"><a href="" id="color-39"></a></li>
+                  <li class="color-40"><a href="" id="color-40"></a></li>
+                  <li class="color-41"><a href="" id="color-41"></a></li>
+                  <li class="color-42"><a href="" id="color-42"></a></li>
+                  <li class="color-43"><a href="" id="color-43"></a></li>
+                  <li class="color-44"><a href="" id="color-44"></a></li>
+                  <li class="color-45"><a href="" id="color-45"></a></li>
+                  <li class="color-46"><a href="" id="color-46"></a></li>
+                  <li class="color-47"><a href="" id="color-47"></a></li>
+                  <li class="color-48"><a href="" id="color-48"></a></li>
+                  <li class="color-49"><a href="" id="color-49"></a></li>
+                  <li class="color-50"><a href="" id="color-50"></a></li>
+                  <li class="color-51"><a href="" id="color-51"></a></li>
+                  <li class="color-52"><a href="" id="color-52"></a></li>
+                  <li class="color-53"><a href="" id="color-53"></a></li>
+                  <li class="color-54"><a href="" id="color-54"></a></li>
+                  <li class="color-55"><a href="" id="color-55"></a></li>
+                  <li class="color-56"><a href="" id="color-56"></a></li>
+                  <li class="color-57"><a href="" id="color-57"></a></li>
+                  <li class="color-58"><a href="" id="color-58"></a></li>
+                  <li class="color-59"><a href="" id="color-59"></a></li>
+                  <li class="color-60"><a href="" id="color-60"></a></li>
+                  <li class="color-61"><a href="" id="color-61"></a></li>
+                  <li class="color-62"><a href="" id="color-62"></a></li>
+                  <li class="color-63"><a href="" id="color-63"></a></li>
+                  <li class="color-64"><a href="" id="color-64"></a></li>
+                  <li class="color-65"><a href="" id="color-65"></a></li>
+                  <li class="color-66"><a href="" id="color-66"></a></li>
+                  <li class="color-67"><a href="" id="color-67"></a></li>
+                  <li class="color-68"><a href="" id="color-68"></a></li>
+                  <li class="color-69"><a href="" id="color-69"></a></li>
+                  <li class="color-70"><a href="" id="color-70"></a></li>
+                  <li class="color-71"><a href="" id="color-71"></a></li>
+                  <li class="color-72"><a href="" id="color-72"></a></li>
+                  <li class="color-73"><a href="" id="color-73"></a></li>
+                  <li class="color-74"><a href="" id="color-74"></a></li>
+                  <li class="color-75"><a href="" id="color-75"></a></li>
+                  <li class="color-76"><a href="" id="color-76"></a></li>
+                  <li class="color-77"><a href="" id="color-77"></a></li>
+                  <li class="color-78"><a href="" id="color-78"></a></li>
+                  <li class="color-79"><a href="" id="color-79"></a></li>
+                  <li class="color-80"><a href="" id="color-80"></a></li>
+                  <li class="color-81"><a href="" id="color-81"></a></li>
+                  <li class="color-82"><a href="" id="color-82"></a></li>
+                  <li class="color-83"><a href="" id="color-83"></a></li>
+                  <li class="color-84"><a href="" id="color-84"></a></li>
+                  <li class="color-85"><a href="" id="color-85"></a></li>
+                  <li class="color-86"><a href="" id="color-86"></a></li>
+                  <li class="color-87"><a href="" id="color-87"></a></li>
+                  <li class="color-88"><a href="" id="color-88"></a></li>
+                  <li class="color-89"><a href="" id="color-89"></a></li>
+                  <li class="color-90"><a href="" id="color-90"></a></li>
+                  <li class="color-91"><a href="" id="color-91"></a></li>
+                  <li class="color-92"><a href="" id="color-92"></a></li>
+                  <li class="color-93"><a href="" id="color-93"></a></li>
+                  <li class="color-94"><a href="" id="color-94"></a></li>
+                  <li class="color-95"><a href="" id="color-95"></a></li>
+                  <li class="color-96"><a href="" id="color-96"></a></li>
+                  <li class="color-97"><a href="" id="color-97"></a></li>
+                  <li class="color-98"><a href="" id="color-98"></a></li>
+                  <li class="color-99"><a href="" id="color-99"></a></li>
+                  <li class="color-100"><a href="" id="color-100"></a></li>
+                  <li class="color-101"><a href="" id="color-101"></a></li>
+                  <li class="color-102"><a href="" id="color-102"></a></li>
+                  <li class="color-103"><a href="" id="color-103"></a></li>
+                  <li class="color-104"><a href="" id="color-104"></a></li>
+                  <li class="color-105"><a href="" id="color-105"></a></li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="find-shots-timeframe">
+              <input type="hidden" name="timeframe" id="timeframe" class="filter-timeframe"/>
+              <label for="timeframe">Timeframe</label>
+              <div class="btn-dropdown">
+                <a href="/" class="form-btn outlined btn-dropdown-link">
+                  <label for="dropdown-toggle">
+                    <span>Now</span>
+                    <input type="checkbox" name="dropdown-toggle" id="dropdown-toggle"/>
+                    <img 
+                    class="icon arrow-down-icon"
+                    src="images/arrow-down.svg"
+                    alt=""
+                    aria-hidden="true"
+                    />
+                  </label>
+                </a>
+                <div class="btn-dropdown-options">
+                  <ul id="dropdown-list1">
+                    <li class="default-filter-option active"><a href="/">Now</a></li>
+                    <li class="timeframe-week" data-value="week"><a href="/">This Past Week</a></li>
+                    <li class="timeframe-month" data-value="month"><a href="/">This Past Month</a> </li>
+                    <li class="timeframe-year" data-value="year"><a href="/">This Past Year</a></li>
+                    <li class="timeframe-ever" data-value="ever"><a href="/">All Time</a></li>
+                    <li class="d-none timeframe-now" data-value="now"><a href="/">Now</a></li>
+                  </ul>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </div>
       <!------------------------------ MAIN CONTENT GRID -------------------------------->

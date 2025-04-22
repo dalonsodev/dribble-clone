@@ -84,6 +84,21 @@ button:focus-visible, a:focus-visible, input[type="checkbox"]:focus-visible {
   --btn-border-radius: 50%;
 }
 
+.btn-dropdown-options {
+  --dropdown-rule-color: #f3f3f4;
+  --dropdown-text-color: #3d3d4e;
+  --dropdown-active-text-color: #0d0c22;
+  --dropdown-active-bg-color: #f3f3f4;
+  --dropdown-hover-bg-color: rgb(243, 243, 244, 0.5);
+  --dropdown-hover-radius: 7px;
+  --dropdown-min-width: 180px;
+  --dropdown-box-shadow: 0px 4px 4px 0px rgba($black, 0.03);
+  --dropdown-border-radius: 8px;
+  --dropdown-border: 1.5px solid rgba(231, 231, 233, 0.9);
+  --dropdown-ul-padding: 12px;
+  --dropdown-anchor-padding: 12px 8px;
+}
+
 .pill {
   /* Pill */
   --pill-bg-color: #f3f3f6;
@@ -143,7 +158,7 @@ ul, ol {
   list-style-type: none;
 }
 
-ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-actions-container, .site-nav-main__list, .filter-categories) {
+ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-actions-container, .site-nav-main__list, .filter-categories, #dropdown-list1, .filter-categories__list) {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -341,6 +356,207 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
 
 .site-nav-sub__link--bold:hover {
   filter: brightness(0) saturate(100%) invert(47%) sepia(25%) saturate(420%) hue-rotate(216deg) brightness(92%) contrast(87%);
+}
+
+#filters-toggle {
+  width: 0;
+  visibility: hidden;
+}
+
+.shot-filters {
+  position: relative;
+  display: none;
+  margin-top: 32px;
+  max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.shot-filters-form {
+  position: relative;
+}
+
+:has(#filters-toggle:checked) .shot-filters {
+  display: block;
+  justify-content: center;
+  max-height: 400px;
+}
+
+.shot-filters-form fieldset {
+  width: auto;
+  margin: 0 16px;
+  border: none;
+  flex: 1;
+}
+
+.shot-filters-form > fieldset > label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  font-variation-settings: "wght" 550;
+  letter-spacing: 0px;
+  color: #0d0c22;
+  margin-bottom: 10px;
+}
+
+.shot-filters input {
+  display: inline-block;
+}
+
+input[type="search"] {
+  border: 1.5px solid #e7e7e9;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  height: 56px;
+  padding: 18px 20px;
+  border-radius: 12px;
+  outline: none;
+  background-color: #fff;
+  color: #0d0c22;
+  appearance: none;
+  font-feature-settings: "ss01";
+  transition: background-color 200ms ease, outline 200ms ease, box-shadow 200ms ease;
+}
+
+input:focus-within {
+  box-shadow: 0 0 0 4px rgba(234, 100, 217, 0.1);
+  border-color: rgba(234, 100, 217, 0.4);
+}
+
+.input-with-icon input[type="search"] {
+  padding-left: 44px;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.shot-filters img.icon-search, .shot-filters img.icon-color {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.shot-filters img.icon-search {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(8%) saturate(236%) hue-rotate(201deg) brightness(89%) contrast(89%);
+}
+
+.shot-filters img.icon-color {
+  width: 15px;
+  height: 15px;
+}
+
+input[type="hidden" i] {
+  display: none !important;
+  appearance: none;
+  background-color: initial;
+  cursor: default;
+  padding: initial;
+  margin: initial;
+}
+
+.btn-dropdown {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+}
+
+.form-btn.outlined.btn-dropdown-link {
+  display: block;
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  padding: 21px 12px 20px;
+  font-size: 14px;
+  font-variation-settings: "wght" 550;
+  line-height: 19px;
+  background-color: #fff;
+  color: #0d0c22;
+  transition: color 200ms ease;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.03);
+}
+
+.btn-dropdown-options {
+  position: absolute;
+  display: none;
+}
+
+#dropdown-toggle {
+  width: 0;
+  display: none;
+}
+
+.form-btn.outlined.btn-dropdown-link > label[for="dropdown-toggle"] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-btn.outlined.btn-dropdown-link ~ .btn-dropdown-options {
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: var(--dropdown-min-width);
+  margin-top: 4px;
+  overflow: auto;
+  border: var(--dropdown-border);
+  border-radius: var(--dropdown-border-radius);
+  box-shadow: var(--dropdown-box-shadow);
+  color: var(--dropdown-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.btn-dropdown-link:has(#dropdown-toggle:checked) ~ .btn-dropdown-options {
+  display: block;
+  z-index: 9999999;
+}
+
+#dropdown-list1 {
+  padding: var(--dropdown-ul-padding);
+}
+
+.btn-dropdown-options li:active a {
+  border-radius: var(--dropdown-hover-radius);
+  background: var(--dropdown-active-bg-color);
+  color: var(--dropdown-active-text-color);
+  font-weight: 500;
+}
+
+.btn-dropdown-options ul li.active a::after {
+  content: "";
+  position: absolute;
+  top: 29px;
+  right: 30px;
+  width: 10px;
+  height: 8px;
+  background-image: url(/images/check.svg);
+  background-repeat: no-repeat;
+}
+
+.default-filter-option.active {
+  border-radius: var(--dropdown-hover-radius);
+  background: var(--dropdown-active-bg-color);
+  color: var(--dropdown-active-text-color);
+  font-weight: 500;
+}
+
+.btn-dropdown-options a {
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+  padding: var(--dropdown-anchor-padding);
+}
+
+.d-none {
+  display: none;
 }
 
 /* END OF EXPANDABLE MENU */
@@ -872,7 +1088,7 @@ a.shots-search-hero__trending-tag:hover {
   }
 }
 
-@media screen and (min-width: 959px) {
+@media screen and (min-width: 960px) {
   .filter-subnav {
     padding-top: 32px;
     padding-right: 32px;
@@ -888,6 +1104,11 @@ a.shots-search-hero__trending-tag:hover {
     padding: 0;
     font-size: 14px;
     margin-bottom: 40px;
+  }
+
+  .shot-filters-form {
+    display: flex;
+    margin: 0 -16px;
   }
 }
 
@@ -907,6 +1128,18 @@ a.shots-search-hero__trending-tag:hover {
     margin: 8px -15px 0;
     padding: 15px 0 0;
     line-height: 20px;
+  }
+
+  .shot-filters-form fieldset {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .shot-filters {
+    margin: 15px -15px -15px;
+    padding: 15px 15px 0;
   }
 
   .wrap-inner {
