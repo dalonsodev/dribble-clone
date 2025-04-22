@@ -8,9 +8,9 @@
   </head>
   <body id="shots">
     <!------------------------------ HEADER & MAIN NAVIGATION -------------------------------->
-    <div class="site-nav">
+    <header class="site-nav">
       <div class="site-nav__wrapper">
-        <input id="menu-toggle" class="menu-button" type="checkbox">
+        <input id="menu-toggle" class="menu-button" type="checkbox" aria-label="Toggle mobile menu">
         <div class="site-nav__dark-overlay"></div>
         <label for="menu-toggle" class="site-nav__dark-overlay"></label>
         <label for="menu-toggle" class="site-nav-burger">
@@ -18,7 +18,7 @@
           <span class="burger-line"></span>
           <span class="burger-line"></span>
         </label>
-        <a class="site-nav__logo" href="/">
+        <a class="site-nav__logo" href="/" aria-label="Back to home page">
           <title>Dribbble: the community for graphic design</title>
           <img
             src="images/wordmark.svg"
@@ -34,14 +34,14 @@
               <a class="site-nav-main__link" href="/shots/popular">
                 <label for="submenu-toggle" class="submenu-toggle">
                   Explore
-                  <img src="images/arrow-down.svg" class="arrow-down-icon" alt="arrow down icon" />
+                  <img src="images/arrow-down.svg" class="arrow-down-icon" role="presentation" alt="" />
                 </label>
               </a>
               <ul class="site-nav-sub">
                 <li>
                   <a href="/shots/popular" class="site-nav-sub__link site-nav-sub__link--bold">
                     <img src="images/trend.png" 
-                      class="icon" 
+                      class="icon" aria-hidden="true" 
                     />
                     Popular
                   </a>
@@ -49,7 +49,7 @@
                 <li>
                   <a href="/shots/recent" class="site-nav-sub__link site-nav-sub__link--bold">
                     <img src="images/sparkles.png" 
-                      class="icon"
+                      class="icon" aria-hidden="true"
                     />
                     New and Noteworthy
                   </a>
@@ -86,14 +86,14 @@
               <a class="site-nav-main__link" href="/designers">
                 <label for="submenu-toggle2" class="submenu-toggle">
                   Hire a Designer
-                  <img src="images/arrow-down.svg" class="arrow-down-icon" alt="arrow down icon" />
+                  <img src="images/arrow-down.svg" class="arrow-down-icon" role="presentation" alt="" />
                 </label>
               </a>
               <ul class="site-nav-sub">
                 <li>
                   <a href="/designers" class="site-nav-sub__link site-nav-sub__link--bold">
                     <img src="images/search.png" 
-                      class="icon" 
+                      class="icon" aria-hidden="true" 
                     />
                     Browse Freelancers
                   </a>
@@ -101,7 +101,7 @@
                 <li>
                   <a href="/services" class="site-nav-sub__link site-nav-sub__link--bold">
                     <img src="images/tag.png" 
-                      class="icon" 
+                      class="icon" aria-hidden="true" 
                     />
                     Purchase Services
                   </a>
@@ -109,7 +109,7 @@
                 <li>
                   <a href="https://dribbble.com/submit-brief" class="site-nav-sub__link site-nav-sub__link--bold">
                     <img src="images/edit.png"
-                      class="icon" 
+                      class="icon" aria-hidden="true" 
                     />
                     Submit a Project Brief
                   </a>
@@ -117,7 +117,7 @@
                 <li>
                   <a href="/jobs/new" class="site-nav-sub__link site-nav-sub__link--bold">
                     <img src="images/document.png" 
-                      class="icon" 
+                      class="icon" aria-hidden="true" 
                     />
                     Post a Full-Time Job
                   </a>
@@ -137,23 +137,24 @@
           <a class="site-nav__login btn" href="#"><p>Log in</p></a>
         </div>
       </div>
-    </div>
+    </header>
     <!------------------------------ SEARCH BLOCK WITH FILTERS -------------------------------->
     <div id="wrap">
       <section class="shots-search-hero">
         <h1 class="shots-search-hero__heading">Discover the world’s top designers</h1>
         <p class="shots-search-hero__subheading">Explore work from the most talented and accomplished designers ready to take on your next project</p>
         <div class="shots-search-hero__input-container">
-          <form class="site-nav-search">
-            <input name="q" type="search" placeholder="What are you looking for?" />
+          <form class="site-nav-search" role="search">
+            <label for="search-input" class="visually-hidden">Search for designs</label>
+            <input id="search-input" name="q" type="search" aria-label="Search for designs" placeholder="What are you looking for?" />
             <button class="site-nav-search__dropdown">
               <span>
                 Shots
-                <img src="images/arrow-down.svg" class="arrow-down-icon" alt="arrow down icon" />
+                <img src="images/arrow-down.svg" class="arrow-down-icon" role="presentation" alt="" />
               </span> <!-- "menú desplegable" hecho con JS-->
             </button>
             <button class="btn--primary-alt btn--circle site-nav-search__go">
-              <img class="search-icon" src="images/search.png" alt="search icon"/>
+              <img class="search-icon" src="images/search.png" role="presentation" alt=""/>
             </button> <!---esto necesitaría JS para funcionar--->
           </form>
         </div>
@@ -176,7 +177,7 @@
           <div class="filter-views">
             <a class="form-btn popular" href="/">
               <span>Popular
-                <img src="images/arrow-down.svg" class="arrow-down-icon popular-icon" alt="arrow down icon" />
+                <img src="images/arrow-down.svg" class="arrow-down-icon popular-icon" role="presentation" alt="" />
               </span>
             </a>
           </div>
@@ -223,7 +224,7 @@
       </div>
       <!------------------------------ MAIN CONTENT GRID -------------------------------->
       <div class="wrap-inner flushed">
-        <div id="content" role="main">
+        <main id="content">
           <ol class="shots-grid">
             <li id="screenshot-25802252" class="shot-thumbnail-base">
               <div class="dribble-shot">
@@ -242,7 +243,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -250,7 +251,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -275,7 +276,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         /> 
                       </a>
@@ -283,7 +284,7 @@
                     <span class="shot-likes-count">105</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     /> 
                     <span class="shot-views-count">7.7k</span>
@@ -308,7 +309,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -316,7 +317,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -341,7 +342,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         /> 
                       </a>
@@ -349,7 +350,7 @@
                     <span class="shot-likes-count">147</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     /> 
                     <span class="shot-views-count">12.2k</span>
@@ -374,7 +375,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -382,7 +383,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -407,7 +408,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -415,7 +416,7 @@
                     <span class="shot-likes-count">121</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">5.9k</span>
@@ -440,7 +441,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -448,7 +449,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -473,7 +474,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -481,7 +482,7 @@
                     <span class="shot-likes-count">63</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">7.7k</span>
@@ -506,7 +507,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -514,7 +515,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -539,7 +540,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -547,7 +548,7 @@
                     <span class="shot-likes-count">84</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">3.6k</span>
@@ -572,7 +573,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -580,7 +581,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -605,7 +606,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -613,7 +614,7 @@
                     <span class="shot-likes-count">38</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">4k</span>
@@ -638,7 +639,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -646,7 +647,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -671,7 +672,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -679,7 +680,7 @@
                     <span class="shot-likes-count">120</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">7.9k</span>
@@ -704,7 +705,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -712,7 +713,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -737,7 +738,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -745,7 +746,7 @@
                     <span class="shot-likes-count">82</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">7.4k</span>
@@ -770,7 +771,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -778,7 +779,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -803,7 +804,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -811,7 +812,7 @@
                     <span class="shot-likes-count">27</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">3.2k</span>
@@ -836,7 +837,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -844,7 +845,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -869,7 +870,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -877,7 +878,7 @@
                     <span class="shot-likes-count">40</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">1.8k</span>
@@ -902,7 +903,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -910,7 +911,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -935,7 +936,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -943,7 +944,7 @@
                     <span class="shot-likes-count">28</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">717</span>
@@ -968,7 +969,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -976,7 +977,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1001,7 +1002,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1009,7 +1010,7 @@
                     <span class="shot-likes-count">126</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">7.7k</span>
@@ -1034,7 +1035,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1042,7 +1043,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1067,7 +1068,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1075,7 +1076,7 @@
                     <span class="shot-likes-count">70</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">2.7k</span>
@@ -1100,7 +1101,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1108,7 +1109,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1133,7 +1134,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1141,7 +1142,7 @@
                     <span class="shot-likes-count">54</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">5.3k</span>
@@ -1166,7 +1167,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1174,7 +1175,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1199,7 +1200,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1207,7 +1208,7 @@
                     <span class="shot-likes-count">22</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">625</span>
@@ -1232,7 +1233,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1240,7 +1241,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1265,7 +1266,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1273,7 +1274,7 @@
                     <span class="shot-likes-count">59</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">2.3k</span>
@@ -1297,7 +1298,7 @@
                           <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                             <img 
                               src="images/bookmark.png"
-                              class="icon"
+                              class="icon" aria-hidden="true"
                             />
                           </a>
                         </li>
@@ -1305,7 +1306,7 @@
                           <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                             <img 
                               src="images/love.png"
-                              class="icon"
+                              class="icon" aria-hidden="true"
                             />
                           </a>
                         </div>
@@ -1331,7 +1332,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1339,7 +1340,7 @@
                     <span class="shot-likes-count">56</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">4.7k</span>
@@ -1364,7 +1365,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1372,7 +1373,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1397,7 +1398,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1405,7 +1406,7 @@
                     <span class="shot-likes-count">195</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">20.7k</span>
@@ -1430,7 +1431,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1438,7 +1439,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1463,7 +1464,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1471,7 +1472,7 @@
                     <span class="shot-likes-count">32</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">2.5k</span>
@@ -1496,7 +1497,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1504,7 +1505,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1529,7 +1530,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1537,7 +1538,7 @@
                     <span class="shot-likes-count">72</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">4.8k</span>
@@ -1562,7 +1563,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1570,7 +1571,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1595,7 +1596,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1603,7 +1604,7 @@
                     <span class="shot-likes-count">69</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">2.2k</span>
@@ -1628,7 +1629,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1636,7 +1637,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1661,7 +1662,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1669,7 +1670,7 @@
                     <span class="shot-likes-count">140</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">13.4k</span>
@@ -1694,7 +1695,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1702,7 +1703,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1727,7 +1728,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1735,7 +1736,7 @@
                     <span class="shot-likes-count">103</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">3.2k</span>
@@ -1760,7 +1761,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1768,7 +1769,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1793,7 +1794,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1801,7 +1802,7 @@
                     <span class="shot-likes-count">30</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">940</span>
@@ -1826,7 +1827,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1834,7 +1835,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1859,7 +1860,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1867,7 +1868,7 @@
                     <span class="shot-likes-count">23</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">626</span>
@@ -1892,7 +1893,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1900,7 +1901,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1925,7 +1926,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1933,7 +1934,7 @@
                     <span class="shot-likes-count">25</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">1.5k</span>
@@ -1958,7 +1959,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -1966,7 +1967,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -1991,7 +1992,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -1999,7 +2000,7 @@
                     <span class="shot-likes-count">117</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">7.1k</span>
@@ -2024,7 +2025,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2032,7 +2033,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2057,7 +2058,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2065,7 +2066,7 @@
                     <span class="shot-likes-count">31</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">4.3k</span>
@@ -2090,7 +2091,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2098,7 +2099,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2123,7 +2124,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2131,7 +2132,7 @@
                     <span class="shot-likes-count">35</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">986</span>
@@ -2156,7 +2157,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2164,7 +2165,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2189,7 +2190,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2197,7 +2198,7 @@
                     <span class="shot-likes-count">26</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">1.7k</span>
@@ -2222,7 +2223,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2230,7 +2231,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2255,7 +2256,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2263,7 +2264,7 @@
                     <span class="shot-likes-count">25</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">2.2k</span>
@@ -2288,7 +2289,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2296,7 +2297,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2321,7 +2322,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2329,7 +2330,7 @@
                     <span class="shot-likes-count">193</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">5.3k</span>
@@ -2354,7 +2355,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2362,7 +2363,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2387,7 +2388,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2395,7 +2396,7 @@
                     <span class="shot-likes-count">20</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">1.1k</span>
@@ -2420,7 +2421,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2428,7 +2429,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2453,7 +2454,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2461,7 +2462,7 @@
                     <span class="shot-likes-count">59</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">2.3k</span>
@@ -2486,7 +2487,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2494,7 +2495,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2519,7 +2520,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2527,7 +2528,7 @@
                     <span class="shot-likes-count">11</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">698</span>
@@ -2552,7 +2553,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2560,7 +2561,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2585,7 +2586,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2593,7 +2594,7 @@
                     <span class="shot-likes-count">25</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">2.3k</span>
@@ -2618,7 +2619,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2626,7 +2627,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2651,7 +2652,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2659,7 +2660,7 @@
                     <span class="shot-likes-count">53</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">1.6k</span>
@@ -2684,7 +2685,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2692,7 +2693,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2717,7 +2718,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2725,7 +2726,7 @@
                     <span class="shot-likes-count">50</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">3.3k</span>
@@ -2750,7 +2751,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2758,7 +2759,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2783,7 +2784,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2791,7 +2792,7 @@
                     <span class="shot-likes-count">16</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">684</span>
@@ -2816,7 +2817,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2824,7 +2825,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2849,7 +2850,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2857,7 +2858,7 @@
                     <span class="shot-likes-count">106</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">3.6k</span>
@@ -2882,7 +2883,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2890,7 +2891,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2915,7 +2916,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2923,7 +2924,7 @@
                     <span class="shot-likes-count">58</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">366</span>
@@ -2948,7 +2949,7 @@
                         <a class="bucket-shot btn btn--circle btn--secondary-alt" href="/signup/new" >
                           <img 
                             src="images/bookmark.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </li>
@@ -2956,7 +2957,7 @@
                         <a class="like-shot btn btn--circle btn--secondary-alt" href="/signup/new">
                           <img 
                             src="images/love.png"
-                            class="icon"
+                            class="icon" aria-hidden="true"
                           />
                         </a>
                       </div>
@@ -2981,7 +2982,7 @@
                   <div class="shot-statistic">
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
-                        <img class="icon"
+                        <img class="icon" aria-hidden="true"
                           src="images/heart.png"
                         />
                       </a>
@@ -2989,7 +2990,7 @@
                     <span class="shot-likes-count">17</span>
                   </div>
                   <div class="shot-statistic">
-                    <img class="icon"
+                    <img class="icon" aria-hidden="true"
                       src="images/eye.png"
                     />
                     <span class="shot-views-count">272</span>
@@ -3009,7 +3010,7 @@
               />
             </a>
           </div>
-        </div>
+        </main>
       </div>
     </div>
     <!------------------------------ FOOTER AREA -------------------------------->
@@ -3268,6 +3269,7 @@
             <a class="site-footer__social-link" href="https://x.com/dribbble" >
               <img
                 class="icon"
+                aria-label="X (former Twitter)"
                 src="images/twitter.png"
                 alt="Twitter logo"
               />
@@ -3275,6 +3277,7 @@
             <a class="site-footer__social-link" href="http://facebook.com/dribbble" >
               <img
                 class="icon"
+                aria-label="Facebook"
                 src="images/facebook.png"
                 alt="Facebook logo"
               />
@@ -3282,6 +3285,7 @@
             <a class="site-footer__social-link" href="http://instagram.com/dribbble" >
               <img
                 class="icon"
+                aria-label="Instagram"
                 src="images/instagram.png"
                 alt="Instagram logo"
               />
@@ -3289,6 +3293,7 @@
             <a class="site-footer__social-link" href="http://www.pinterest.com/dribbble" >
               <img
                 class="icon"
+                aria-label="Pinterest"
                 src="images/pinterest.png"
                 alt="Pinterest logo"
               />
