@@ -176,10 +176,22 @@
         <div class="filter-subnav-inner">
           <div class="filter-views">
             <a class="form-btn popular" href="/">
-              <span>Popular
+              <label for="fake-btn-popular">
+                <input type="checkbox" name="fake-btn-popular" id="fake-btn-popular"/>
+                Popular
                 <img src="images/arrow-down.svg" class="arrow-down-icon popular-icon" role="presentation" alt="" />
-              </span>
+              </label>
             </a>
+            <div class="btn-dropdown-options popular-dropdown">
+              <ul>
+                <li class="popular active" id="popular-btn">
+                  <a href="/shots/popular">Popular</a>
+                </li>
+                <li id="recent-btn">
+                  <a href="/shots/recent">New & Noteworthy</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="filter-categories">
             <span class="scroll scroll-backward"></span> 

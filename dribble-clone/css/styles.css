@@ -158,7 +158,7 @@ ul, ol {
   list-style-type: none;
 }
 
-ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-actions-container, .site-nav-main__list, .filter-categories, #dropdown-list1, .filter-categories__list, .color-chips) {
+ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-actions-container, .site-nav-main__list, .filter-categories, #dropdown-list1, .filter-categories__list, .color-chips, .popular-dropdown ul) {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -356,6 +356,43 @@ ul:not(.site-footer__links, .site-footer__lower-links, .site-nav-sub, .shot-acti
 
 .site-nav-sub__link--bold:hover {
   filter: brightness(0) saturate(100%) invert(47%) sepia(25%) saturate(420%) hue-rotate(216deg) brightness(92%) contrast(87%);
+}
+
+#fake-btn-popular {
+  display: none;
+}
+
+.btn-dropdown-options.popular-dropdown {
+  display: none;
+}
+
+:has(#fake-btn-popular:checked) ~ .btn-dropdown-options.popular-dropdown {
+  display: block;
+  left: -1px;
+}
+
+.filter-views {
+  position: relative;
+}
+
+.btn-dropdown-options.popular-dropdown ul {
+  padding: var(--dropdown-ul-padding);
+  position: relative;
+  z-index: 4;
+  background-color: #fff;
+}
+
+.btn-dropdown-options.popular-dropdown li.active {
+  background: var(--dropdown-active-bg-color);
+  border-radius: var(--dropdown-border-radius);
+}
+
+img.popular-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.filter-views:has(#fake-btn-popular:checked) img.popular-icon {
+  transform: translateY(10%) rotate(180deg);
 }
 
 label[for="filters-toggle"] {
