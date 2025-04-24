@@ -34,13 +34,12 @@
               <a class="site-nav-main__link" href="/shots/popular">
                 <label for="submenu-toggle" class="submenu-toggle">
                   Explore
-                  <img src="images/arrow-down.svg" class="arrow-down-icon" role="presentation" alt="" />
                 </label>
               </a>
               <ul class="site-nav-sub">
                 <li>
                   <a href="/shots/popular" class="site-nav-sub__link site-nav-sub__link--bold">
-                    <img src="images/trend.png" 
+                    <img src="images/trends-dribbble.svg" 
                       class="icon" aria-hidden="true" 
                     />
                     Popular
@@ -48,7 +47,7 @@
                 </li>
                 <li>
                   <a href="/shots/recent" class="site-nav-sub__link site-nav-sub__link--bold">
-                    <img src="images/sparkles.png" 
+                    <img src="images/new-dribbble.svg" 
                       class="icon" aria-hidden="true"
                     />
                     New and Noteworthy
@@ -86,13 +85,12 @@
               <a class="site-nav-main__link" href="/designers">
                 <label for="submenu-toggle2" class="submenu-toggle">
                   Hire a Designer
-                  <img src="images/arrow-down.svg" class="arrow-down-icon" role="presentation" alt="" />
                 </label>
               </a>
               <ul class="site-nav-sub">
                 <li>
                   <a href="/designers" class="site-nav-sub__link site-nav-sub__link--bold">
-                    <img src="images/search.png" 
+                    <img src="images/search-black-dribbble.svg" 
                       class="icon" aria-hidden="true" 
                     />
                     Browse Freelancers
@@ -100,7 +98,7 @@
                 </li>
                 <li>
                   <a href="/services" class="site-nav-sub__link site-nav-sub__link--bold">
-                    <img src="images/tag.png" 
+                    <img src="images/tag-dribbble.svg" 
                       class="icon" aria-hidden="true" 
                     />
                     Purchase Services
@@ -108,7 +106,7 @@
                 </li>
                 <li>
                   <a href="https://dribbble.com/submit-brief" class="site-nav-sub__link site-nav-sub__link--bold">
-                    <img src="images/edit.png"
+                    <img src="images/edit-dribbble.svg"
                       class="icon" aria-hidden="true" 
                     />
                     Submit a Project Brief
@@ -116,7 +114,7 @@
                 </li>
                 <li>
                   <a href="/jobs/new" class="site-nav-sub__link site-nav-sub__link--bold">
-                    <img src="images/document.png" 
+                    <img src="images/document-dribbble.svg" 
                       class="icon" aria-hidden="true" 
                     />
                     Post a Full-Time Job
@@ -133,6 +131,11 @@
           </ul>
         </nav>
         <div class="site-nav__actions-container">
+          <div class="site-nav-icon-actions">
+            <button class="site-nav-icon-actions__item">
+              <img src="images/search-black-dribbble.svg" class="icon" alt=""></img>
+            </button>
+          </div>
           <a class="site-nav__signup" href="#">Sign up</a>
           <a class="site-nav__login btn" href="#"><p>Log in</p></a>
         </div>
@@ -147,15 +150,22 @@
           <form class="site-nav-search" role="search">
             <label for="search-input" class="visually-hidden">Search for designs</label>
             <input id="search-input" name="q" type="search" aria-label="Search for designs" placeholder="What are you looking for?" />
-            <button class="site-nav-search__dropdown">
-              <span>
+            <a class="site-nav-search__dropdown">
+              <label for="search-dropdown-button">
+                <input type="checkbox" name="search-dropdown-button" id="search-dropdown-button">
                 Shots
-                <img src="images/arrow-down.svg" class="arrow-down-icon" role="presentation" alt="" />
-              </span> <!-- "menú desplegable" hecho con JS-->
-            </button>
+              </label>
+            </a>
+            <div class="dropdown-content">
+              <ul class="dropdown-content__list">
+                <li class="dropdown-content__item"><a href="/" class="dropdown-content__link dropdown-content__link-active">Shots</a></li>
+                <li class="dropdown-content__item"><a href="/" class="dropdown-content__link">Designers</a></li>
+                <li class="dropdown-content__item"><a href="/" class="dropdown-content__link">Services</a></li>
+              </ul>
+            </div>
             <button class="btn--primary-alt btn--circle site-nav-search__go">
-              <img class="search-icon" src="images/search.png" role="presentation" alt=""/>
-            </button> <!---esto necesitaría JS para funcionar--->
+              <img class="search-icon" src="images/search-dribbble-1.svg" role="presentation" alt=""/>
+            </button>
           </form>
         </div>
         <div class="shots-search-hero__trending-container">
@@ -230,7 +240,7 @@
             <a class="form-btn filters" href="/">
               <label for="filters-toggle">
                 <input type="checkbox" name="filters-toggle" id="filters-toggle">
-                <img class="icon filter-icon" src="images/filter.png" />
+                <img class="icon filter-icon" src="images/filter-dribbble.svg" />
                 Filters
               </label>
             </a>
@@ -244,7 +254,7 @@
                 <input type="search" name="tag" id="tag">
                 <img 
                   class="icon icon-search" 
-                  src="images/search.png" 
+                  src="images/search-gray-dribbble.svg" 
                   alt="" 
                   aria-hidden="true"
                 />
@@ -256,7 +266,7 @@
                 <input type="search" name="color" id="color" max-lenght="7" pattern="[a-fA-F\d]+" placeholder="Enter hex or select">
                 <img 
                   class="icon icon-color"
-                  src="images/color-wheel.png" 
+                  src="images/color-wheel-dribbble.svg" 
                   alt="" 
                   aria-hidden="true"
                 />
@@ -457,7 +467,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         /> 
                       </a>
                     </div>
@@ -465,7 +475,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     /> 
                     <span class="shot-views-count">7.7k</span>
                   </div>
@@ -523,7 +533,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         /> 
                       </a>
                     </div>
@@ -531,7 +541,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     /> 
                     <span class="shot-views-count">12.2k</span>
                   </div>
@@ -589,7 +599,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -597,7 +607,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">5.9k</span>
                   </div>
@@ -655,7 +665,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -663,7 +673,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">7.7k</span>
                   </div>
@@ -721,7 +731,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -729,7 +739,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">3.6k</span>
                   </div>
@@ -787,7 +797,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -795,7 +805,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">4k</span>
                   </div>
@@ -853,7 +863,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -861,7 +871,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">7.9k</span>
                   </div>
@@ -919,7 +929,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -927,7 +937,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">7.4k</span>
                   </div>
@@ -985,7 +995,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -993,7 +1003,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">3.2k</span>
                   </div>
@@ -1051,7 +1061,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1059,7 +1069,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">1.8k</span>
                   </div>
@@ -1117,7 +1127,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1125,7 +1135,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">717</span>
                   </div>
@@ -1183,7 +1193,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1191,7 +1201,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">7.7k</span>
                   </div>
@@ -1249,7 +1259,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1257,7 +1267,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">2.7k</span>
                   </div>
@@ -1315,7 +1325,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1323,7 +1333,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">5.3k</span>
                   </div>
@@ -1381,7 +1391,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1389,7 +1399,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">625</span>
                   </div>
@@ -1447,7 +1457,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1455,7 +1465,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">2.3k</span>
                   </div>
@@ -1513,7 +1523,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1521,7 +1531,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">4.7k</span>
                   </div>
@@ -1579,7 +1589,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1587,7 +1597,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">20.7k</span>
                   </div>
@@ -1645,7 +1655,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1653,7 +1663,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">2.5k</span>
                   </div>
@@ -1711,7 +1721,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1719,7 +1729,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">4.8k</span>
                   </div>
@@ -1777,7 +1787,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1785,7 +1795,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">2.2k</span>
                   </div>
@@ -1843,7 +1853,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1851,7 +1861,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">13.4k</span>
                   </div>
@@ -1909,7 +1919,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1917,7 +1927,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">3.2k</span>
                   </div>
@@ -1975,7 +1985,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -1983,7 +1993,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">940</span>
                   </div>
@@ -2041,7 +2051,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2049,7 +2059,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">626</span>
                   </div>
@@ -2107,7 +2117,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2115,7 +2125,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">1.5k</span>
                   </div>
@@ -2173,7 +2183,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2181,7 +2191,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">7.1k</span>
                   </div>
@@ -2239,7 +2249,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2247,7 +2257,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">4.3k</span>
                   </div>
@@ -2305,7 +2315,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2313,7 +2323,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">986</span>
                   </div>
@@ -2371,7 +2381,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2379,7 +2389,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">1.7k</span>
                   </div>
@@ -2437,7 +2447,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2445,7 +2455,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">2.2k</span>
                   </div>
@@ -2503,7 +2513,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2511,7 +2521,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">5.3k</span>
                   </div>
@@ -2569,7 +2579,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2577,7 +2587,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">1.1k</span>
                   </div>
@@ -2635,7 +2645,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2643,7 +2653,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">2.3k</span>
                   </div>
@@ -2701,7 +2711,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2709,7 +2719,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">698</span>
                   </div>
@@ -2767,7 +2777,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2775,7 +2785,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">2.3k</span>
                   </div>
@@ -2833,7 +2843,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2841,7 +2851,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">1.6k</span>
                   </div>
@@ -2899,7 +2909,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2907,7 +2917,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">3.3k</span>
                   </div>
@@ -2965,7 +2975,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -2973,7 +2983,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">684</span>
                   </div>
@@ -3031,7 +3041,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -3039,7 +3049,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">3.6k</span>
                   </div>
@@ -3097,7 +3107,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -3105,7 +3115,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">366</span>
                   </div>
@@ -3163,7 +3173,7 @@
                     <div class="shot-action">
                       <a class="shot-like" href="/signup/new">
                         <img class="icon" aria-hidden="true"
-                          src="images/heart.png"
+                          src="images/heart-gray-dribbble.svg"
                         />
                       </a>
                     </div>
@@ -3171,7 +3181,7 @@
                   </div>
                   <div class="shot-statistic">
                     <img class="icon" aria-hidden="true"
-                      src="images/eye.png"
+                      src="images/eye-dribbble.svg"
                     />
                     <span class="shot-views-count">272</span>
                   </div>
