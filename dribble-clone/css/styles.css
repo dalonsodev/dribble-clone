@@ -2621,5 +2621,4 @@ ul[class*=site-footer] a:hover {
 /* END OF FOOTER */
 a, button, input, [role="button"], label {
   -webkit-tap-highlight-color: transparent;
-  tap-highlight-color: transparent; /* Para algunos navegadores modernos */
 }
