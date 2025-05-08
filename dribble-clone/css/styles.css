@@ -509,11 +509,6 @@ input:focus-within:not(input[name="q"]) {
   transform: translateY(-50%);
 }
 
-.shot-filters img.icon-color {
-  width: 16px;
-  height: 16px;
-}
-
 input[type="hidden" i] {
   display: none !important;
   appearance: none;
@@ -2316,6 +2311,7 @@ img[src*="eye.png"] {
 
 .site-footer-marquee__track {
   padding-top: 60px;
+  will-change: transform;
 }
 
 @keyframes footer-marquee-mobile-wiggle {
